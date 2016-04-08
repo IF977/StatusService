@@ -15,6 +15,6 @@ Sistema de avaliação de serviços(CRM)
     
 Grupo é composto por:
 
-  - Augusto Rodrigues de Lima (arl4@cin.ufpe.br)
-  - Carlos Henrique do Nascimento Melo (chnm@cin.ufpe.br)
-  - Pedro José de Souza Neto (pjsn@cin.ufpe.br)
+  - Augusto Rodrigues de Lima (arl4@cin.ufpe.br) [Tester]
+  - Carlos Henrique do Nascimento Melo (chnm@cin.ufpe.br) [Developer]
+  - Pedro José de Souza Neto (pjsn@cin.ufpe.br) [SCRUM Master]
