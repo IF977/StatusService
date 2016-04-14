@@ -10,6 +10,7 @@ JUSTIFICATIVA:
     
 
 DESCRIÇÃO:
+
         Nosso projeto tem por foco implementar uma ferramenta de avaliação de serviços empresariais.
         Essa ferramenta dará suporte a empresas que,fazendo uso da mesma, terão permissão para cadastrar perguntas
         nas quais seus clientes podem responder, assim as empresas poderão mensurar a satisfação de seus usuários.
