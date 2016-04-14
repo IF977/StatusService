@@ -6,10 +6,15 @@ Esse é o Repositório do Time Wild Cats para o Projeto de Engenharia de Softwar
 
 Sistema de avaliação de serviços(CRM)
 
+JUSTIFICATIVA
+    
+
+DESCRIÇÃO
     Nosso projeto tem por foco implementar uma ferramenta de avaliação de serviços empresariais.
     Essa ferramenta dará suporte a empresas que,fazendo uso da mesma, terão permissão para cadastrar perguntas
     nas quais seus clientes podem responder, assim as empresas poderão mensurar a satisfação de seus usuários.
     O sistema funcionará online tanto a empresa quanto os seus usuários vão acessar pela rede.
+
 
     
     
