@@ -1,0 +1,39 @@
+<%= form_for @user do |u| %>
+	<% if @user.errors.any? %>
+	<div id="error_explanation">
+		<div class="alert-error">
+			O formulário contém <%= pluralize(@user.errors.count, "erro") %>
+		</div>
+		<ul>
+			<% @user.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+	<% end %>
+
+	<div class="field">
+		<%= u.label :nome %>
+		<%= u.text_field :nome %>
+	</div>
+	<div class="field">
+		<%= u.label :email %>
+		<%= u.email_field :email %>
+	</div>
+	<div class="field">
+		<%= u.label :login %>
+		<%= u.text_field :login %>
+	</div>
+	<div class="field">
+		<%= u.label :password %>
+		<%= u.password_field :password %>
+	</div>
+	<div class="field">
+		<%= u.label :password_confirmation %>
+		<%= u.password_field :password_confirmation %>
+	</div>
+	<div class="actions">
+		<%= u.submit "Cadastrar" %>
+	</div>
+<% end %>
+

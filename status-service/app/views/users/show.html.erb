@@ -1,0 +1,13 @@
+<html> 
+	<body> 
+		<h3>Perfil de <%= @user.nome %> </h3>
+	    Email:<%= @user.email %>
+	    Login:<%= @user.login %> 
+	    <% if current_user == @user %>
+	    	<ul>
+	    		<li><%= link_to "Edit", edit_user_path(current_user) %></li>
+	    		<li><%= link_to "Delete", @user, method: :delete %></li>
+	    	</ul>
+	    <% end %>
+	</body> 
+</html>

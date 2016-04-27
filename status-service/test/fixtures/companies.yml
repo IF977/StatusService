@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cnpj: MyString
+  nome: MyString
+  password_digest: MyString
+
+two:
+  cnpj: MyString
+  nome: MyString
+  password_digest: MyString
