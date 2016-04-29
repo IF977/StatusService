@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render '/layouts/header' %>
+<nav class="navbar navbar-inverse">
+  <font size=6; color=white>StatusService</font>
+</nav>
+
 <%= yield %>
 
+<div class="panel panel-default">
+  <div class="panel-body">
+    <center><font color=white>CopyLeft - WildCats</font></center>
+  </div>
+</div>
 </body>
 </html>

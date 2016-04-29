@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+.body{height: 80%; width: 100%;}
+.panel{position: absolute;
+        bottom: 0%;
+        width:100%;
+        background: #696969;}
+.navbar{background:#4169E1;}
+ 
