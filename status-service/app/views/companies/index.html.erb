@@ -1,0 +1,20 @@
+<%= render 'header' %>
+<h1>All Companies </h1> 
+<table> 
+	<thead> 
+		<tr> 
+			<th>Nome</th> 
+			<th>CNPJ</th> 
+			<th></th> 
+		</tr> 
+	</thead> 
+	<tbody> 
+		<% @companies.each do |company| %> 
+		<tr> 
+			<td><%= company.nome %></td> 
+			<td><%= company.cnpj %></td>
+			<td><%= link_to "Show", company %></td> 
+		</tr> 
+		<%end%> 
+	</tbody> 
+</table>

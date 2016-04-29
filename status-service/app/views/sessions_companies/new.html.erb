@@ -1,10 +1,10 @@
 <ul>
 	<li><%= link_to "Home", root_path %></li> 
 </ul>
-<%= form_for :session, url: sign_in_path do |f| %>
+<%= form_for :session, url: sign_in_company_path do |f| %>
 	<div class="field">
-		<%= f.label :login %><br /> 
-		<%= f.text_field :login %> 
+		<%= f.label :cnpj %><br /> 
+		<%= f.text_field :cnpj %> 
 	</div> 
 
 	<div class="field"> 
@@ -15,5 +15,5 @@
 		<%= f.submit "Log in" %> 
 	</div> 
 
-	<p>New user? <%= link_to "Sign up now!", new_user_path %></p> 
+	<p>New company? <%= link_to "Sign up now!", new_company_path %></p> 
 <% end %>
