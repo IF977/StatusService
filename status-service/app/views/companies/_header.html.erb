@@ -1,0 +1,18 @@
+<header> 
+	<div> 
+		<nav> 
+			<ul> 
+				<% if logged_in_company? %>
+					<li><%= link_to "Companies", companies_path %></li> 
+					<li> 
+						<ul> 
+							<li><%= link_to "Profile", current_company %></li> 
+							<li><%= link_to "Settings", edit_company_path(current_company) %></li> 
+							<li> <%= link_to "Log out", sign_out_company_path, method: "delete" %> </li> 
+						</ul> 
+					</li>
+				<% end %> 
+			</ul> 
+		</nav> 
+	</div> 
+</header>
