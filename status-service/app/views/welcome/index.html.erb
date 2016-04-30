@@ -1,6 +1,6 @@
 <div class="well well-lg">
-<ul>
-	<li><%= link_to 'User', sign_in_path %></li>
-	<li><%= link_to 'Company', sign_in_company_path%></li>
-</ul>
+	<div class="btn-group" role="group" aria-label="...">
+		<%= link_to '<button type="button" class="btn btn-default">User</button>'.html_safe, sign_in_path %>
+		<%= link_to '<button type="button" class="btn btn-default">Company</button>'.html_safe, sign_in_company_path%>
+	</div>
 </div>
