@@ -9,7 +9,14 @@
 //            
  //           
   //          }
-.well{position:absolute;
+#weris{position:absolute;
     right:50%;
     //top:50%;
     }
+#btn_user{
+     background: #4169E1;
+    color: #fff;
+    }
+#btn_user:hover{ background: #fff;
+    color: #4169E1;
+}
