@@ -1,26 +1,3 @@
-<!-- Script de ocultar mostrar -->
-<script>
-function btn_(obj) {
-
-     document.getElementById('div_aba1').style.display="none";
-      document.getElementById('div_aba2').style.display="none";
-
-   switch (obj.id) {
-      case 'btn_user':
-      document.getElementById('div_aba1').style.display="block";
-      btn_user.disabled="disabled";
-      btn_company.disabled="";
-      break
-      case 'btn_company':
-      document.getElementById('div_aba2').style.display="block";
-      btn_user.disabled="";
-      btn_company.disabled="disabled";
-      break
-   }
-}
-
-</script>
-
 <div class="well well-lg" id="box_login">
 	<div class="btn-group" role="group" aria-label="...">
 		<button type="button" class="btn btn-default" onclick="btn_(this);" id="btn_user" disabled><font color=white>User</font></button>
@@ -30,7 +7,7 @@ function btn_(obj) {
 	</div>
 <!-- Aba de usuario -->	
 	<div id="div_aba1" style="display;">
-		<div class="well well-lg" id="div_user">
+		<div class="well well-sm" id="div_user">
 			<%= form_for :session, url: sign_in_path do |f| %>
 			<div class="field">
 				<%= f.label :login %><br /> 
@@ -41,8 +18,9 @@ function btn_(obj) {
 				<%= f.label :password %><br /> 
 				<%= f.password_field :password, autocomplete: "off" %> 
 			</div> 
-			<div class="actions"> 
-				<%= f.submit "Log in" %> 
+			<div class="actions">
+				<br>
+				<%= f.submit "Log in", class: 'btn' %> 
 			</div> 
 	
 			<p>New user? <%= link_to "Sign up now!", new_user_path %></p> 
@@ -51,7 +29,7 @@ function btn_(obj) {
 	</div>
 <!-- Aba de compania -->
 	<div id="div_aba2" style="display:none;">
-		<div class="well well-lg" id="div_company">
+		<div class="well well-sm" id="div_company">
 			<%= form_for :session, url: sign_in_company_path do |f| %>
 				<div class="field">
 					<%= f.label :cnpj %><br /> 
@@ -62,8 +40,9 @@ function btn_(obj) {
 					<%= f.label :password %><br /> 
 					<%= f.password_field :password, autocomplete: "off" %> 
 				</div> 
-				<div class="actions"> 
-					<%= f.submit "Log in" %> 
+				<div class="actions">
+					<br> 
+					<%= f.submit "Log in", class: 'btn' %> 
 				</div> 
 	
 				<p>New company? <%= link_to "Sign up now!", new_company_path %></p> 
