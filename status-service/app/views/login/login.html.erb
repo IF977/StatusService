@@ -1,25 +1,5 @@
 <!-- Script de ocultar mostrar -->
-<script>
-function btn_(obj) {
 
-     document.getElementById('div_aba1').style.display="none";
-      document.getElementById('div_aba2').style.display="none";
-
-   switch (obj.id) {
-      case 'btn_user':
-      document.getElementById('div_aba1').style.display="block";
-      btn_user.disabled="disabled";
-      btn_company.disabled="";
-      break
-      case 'btn_company':
-      document.getElementById('div_aba2').style.display="block";
-      btn_user.disabled="";
-      btn_company.disabled="disabled";
-      break
-   }
-}
-
-</script>
 
 <div class="well well-lg" id="box_login">
 	<div class="btn-group" role="group" aria-label="...">
