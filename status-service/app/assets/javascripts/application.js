@@ -14,3 +14,24 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+function btn_(obj) {
+
+     document.getElementById('div_aba1').style.display="none";
+      document.getElementById('div_aba2').style.display="none";
+
+   switch (obj.id) {
+      case 'btn_user':
+      document.getElementById('div_aba1').style.display="block";
+      btn_user.disabled="disabled";
+      btn_company.disabled="";
+      break
+      case 'btn_company':
+      document.getElementById('div_aba2').style.display="block";
+      btn_user.disabled="";
+      btn_company.disabled="disabled";
+      break
+   }
+}
+
