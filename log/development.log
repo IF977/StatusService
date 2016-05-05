@@ -600,3 +600,54 @@ Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0
 Processing by LoginController#login as HTML
   Rendered login/login.html.erb within layouts/application (2.8ms)
 Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 10.240.0.165 at 2016-05-05 22:55:32 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 405ms (Views: 392.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.208 at 2016-05-05 22:55:35 +0000
+Cannot render console from 10.240.0.208! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 97ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 10.240.0.208 at 2016-05-05 22:55:37 +0000
+Cannot render console from 10.240.0.208! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"enRrx/xhx7H2OQ0OQQfY+ByxscRq0MVirRwh8Km4KEwhzoxyrQFiD8ocjtppGL4Hgi/KvRxSE3Ho9ix5MT9jrg==", "session"=>{"login"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."login" = ? LIMIT 1[0m  [["login", ""]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 24ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.200 at 2016-05-05 22:55:37 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 55ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in_company" for 10.240.0.189 at 2016-05-05 22:55:48 +0000
+Cannot render console from 10.240.0.189! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsCompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U+4MSnn2YSflX+DFje8yOjtrbkC3iV8a9+n0nct6RFYIVOv/KJbEmdl6YxGl8FTFpfUVOcELiQmyA/kUU/0PtA==", "session"=>{"cnpj"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mCompany Load (0.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" IS NULL LIMIT 1
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."cnpj" = ? LIMIT 1[0m  [["cnpj", ""]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.165 at 2016-05-05 22:55:49 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
