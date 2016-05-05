@@ -188,3 +188,415 @@ Processing by CompaniesController#new as HTML
   Rendered companies/_form.html.erb (6.9ms)
   Rendered companies/new.html.erb within layouts/application (9.1ms)
 Completed 200 OK in 186ms (Views: 172.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.240.0.179 at 2016-05-05 18:43:28 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 866ms (Views: 853.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.self-20437477f3bdfa15ef3ee1179942895c828f312d5a58d98194bea60e09f86265.css?body=1" for 10.240.0.200 at 2016-05-05 18:43:30 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 10.240.0.165 at 2016-05-05 18:43:30 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-toggle.min.self-5b94fd5758b15460be4f85b34be7d22cce8b905e7f820328b86c05dfa3201e0b.css?body=1" for 10.240.0.110 at 2016-05-05 18:43:30 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-toggle.self-9198e01fbfe277e0e47260a4fdec8b56e3cc4b8b6a06d189db6b11f294430565.css?body=1" for 10.240.0.207 at 2016-05-05 18:43:30 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.192 at 2016-05-05 18:43:30 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap2-toggle.self-379593ba7c9ed5bf39668b549fd01780066ca0f60c277423a64ac3101a71b081.css?body=1" for 10.240.0.200 at 2016-05-05 18:43:30 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap2-toggle.min.self-0d2fcc17cd28b4e6fb1056da4f31907ece653c0f88c789ddb012195aa1ce0f0c.css?body=1" for 10.240.0.200 at 2016-05-05 18:43:30 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/companys.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.179 at 2016-05-05 18:43:30 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/login.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.200 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.110 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions_companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.165 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.207 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-ba6a565fd58c9717587440027426736f95986de402f9e46241a0f2ceea3a60c9.css?body=1" for 10.240.0.179 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f0416c3e59e14ef7696ceb1d82cbadb0c6d61f42bca049412051d8e381399529.css?body=1" for 10.240.0.165 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-theme.min.self-6f2f4ae8073eeed25f7f4c1fe221c20b00fe8aea594a38fa55e240d6d6a2e51d.css?body=1" for 10.240.0.207 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.240.0.207 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.240.0.200 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.206 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-toggle.self-ad54ae5b610d0fa54785829ea48f28bae0156e6da3c36e42c65ba2455b7d4058.js?body=1" for 10.240.0.207 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-toggle.min.self-7e7ab5c49a69778bc06c8a768ae78d37ceecb1516b6feeca186087afbc091d67.js?body=1" for 10.240.0.110 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 10.240.0.200 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.207 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap2-toggle.self-42dc2096bf3a930c8ab4972d7bddc3ce69cdebe560edc1cdb2f3160a28b1e5a3.js?body=1" for 10.240.0.200 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap2-toggle.min.self-39b7aad85523bbaca97894fa559f16ea4dabe4570c72af649aa396e6a22edee6.js?body=1" for 10.240.0.157 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/companys.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.166 at 2016-05-05 18:43:31 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/login.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.110 at 2016-05-05 18:43:32 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 10.240.0.206 at 2016-05-05 18:43:32 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.192 at 2016-05-05 18:43:32 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions_companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.179 at 2016-05-05 18:43:32 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.165 at 2016-05-05 18:43:32 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.187 at 2016-05-05 18:43:32 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-141e255a50a74582fe4c8465da15eee28d284b4a45acd318010321d5194d833d.js?body=1" for 10.240.0.200 at 2016-05-05 18:43:32 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/sign_in_login" for 10.240.0.200 at 2016-05-05 18:43:33 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (97.8ms)
+Completed 200 OK in 205ms (Views: 204.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 10.240.0.200 at 2016-05-05 18:43:40 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MafEx/RuDDZstKp9+l+yivHQIYZCXJqPPuIw93SBiI5E9eNIY8NCtIEGTcvDM5VsKUF3eb3gpKnhWATBDX+QcA==", "session"=>{"login"=>"dasda", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."login" = ? LIMIT 1[0m  [["login", "dasda"]]
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 1.5ms)
+
+NameError (undefined local variable or method `template' for #<SessionsController:0x007fd5320a0d98>):
+  app/controllers/sessions_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.3ms)
+
+
+Started POST "/sign_in" for 10.240.0.204 at 2016-05-05 18:45:17 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t02iAZWlQhdMLOe5h/ElOb9Wh9RJ7/8FLr6k39zaWpnCH4WOAggMlaGeAA++nQLfZ8fRK7ZTwSPxBJDppSRCZw==", "session"=>{"login"=>"dasda", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."login" = ? LIMIT 1[0m  [["login", "dasda"]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.7ms)
+
+NameError (undefined local variable or method `file' for #<SessionsController:0x007fd534062cd0>
+Did you mean?  fail):
+  app/controllers/sessions_controller.rb:12:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.2ms)
+
+
+Started GET "/" for 10.240.0.165 at 2016-05-05 18:46:19 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.207 at 2016-05-05 18:46:21 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 55ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in_company" for 10.240.0.167 at 2016-05-05 18:46:25 +0000
+Cannot render console from 10.240.0.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsCompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"whs4AqtYsWQNGtPCYcSrFMLTiMHzdlfbN57nXxxvmaC3SR+NPPX/5uCoNHRYqIzyGkLePgzKaf3oJNNpZZGBXg==", "session"=>{"cnpj"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mCompany Load (0.5ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" IS NULL LIMIT 1
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."cnpj" = ? LIMIT 1[0m  [["cnpj", ""]]
+  Rendered sessions_companies/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 69ms (Views: 61.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/sign_in" for 10.240.0.197 at 2016-05-05 18:46:41 +0000
+Cannot render console from 10.240.0.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FYtfl0XdlWqGZoSVYJhG1WReCD6UW6LI8JWiuDouwAVg2XgY0nDb6GvUYyNZ9GEzvM9ewWvnnO4vL5aOQ9DY+w==", "session"=>{"login"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."login" = ? LIMIT 1[0m  [["login", ""]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.206 at 2016-05-05 18:46:41 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 55ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 10.240.0.207 at 2016-05-05 18:46:46 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9OPUWqZxSeCAPp/zmrxHUecfsoe36Up4F421B99O9aOBsfPVMdwHYm2MeEWj0GC3P47keEhVdF7IN4ExprDtXQ==", "session"=>{"login"=>"dasdas", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."login" = ? LIMIT 1[0m  [["login", "dasdas"]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.189 at 2016-05-05 18:46:47 +0000
+Cannot render console from 10.240.0.189! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.208 at 2016-05-05 18:55:47 +0000
+Cannot render console from 10.240.0.208! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 10.240.0.206 at 2016-05-05 18:55:55 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RcGSbCt+QJjtHBsMCN3Iadz30yiAcVqcyMeKHo77VUswk7XjvNMOGgCu/Loxse+PBGaF13/NZLoXfb4o9wVNtQ==", "session"=>{"login"=>"test", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."login" = ? LIMIT 1[0m  [["login", "test"]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 8ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.157 at 2016-05-05 18:55:55 +0000
+Cannot render console from 10.240.0.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 74ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 10.240.0.192 at 2016-05-05 18:56:08 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eMxEnsmDS9ghRgSABpRPHiY4wpozrsPZmB0+e4z6oJ0NnmMRXi4FWsz04zY/+Gj4/qmUZcwS/f9HpwpN9QS4Yw==", "session"=>{"login"=>"dasda", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."login" = ? LIMIT 1[0m  [["login", "dasda"]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.207 at 2016-05-05 18:56:08 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 71ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.157 at 2016-05-05 18:56:33 +0000
+Cannot render console from 10.240.0.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 78ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 10.240.0.166 at 2016-05-05 18:56:35 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"laOJkYKcH2HhImRD4tTCVrRO260FLwpNc+9u1BhboFzg8a4eFTFR4wyQg/XbuOWwbN+NUvqTNGusVVriYaW4og==", "session"=>{"login"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."login" = ? LIMIT 1[0m  [["login", ""]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.207 at 2016-05-05 18:56:35 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 67ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.206 at 2016-05-05 18:57:41 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 10.240.0.75 at 2016-05-05 18:57:44 +0000
+Cannot render console from 10.240.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XDjNOQeIQJPT7UFon+qck4q1qpkp8xBlRSOdNi3xO5Qpauq2kCUOET5fpt6mhrt1UiT8ZtZPLkOamakAVA8jag==", "session"=>{"login"=>"dasd", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."login" = ? LIMIT 1[0m  [["login", "dasd"]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.206 at 2016-05-05 18:57:45 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in_company" for 10.240.0.203 at 2016-05-05 18:58:53 +0000
+Cannot render console from 10.240.0.203! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsCompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HfjD5wnXJytUuG4inuo48N+e/7rkHCKOt87yi1OaZm9oquRonnppqbkKiZSnhh8WBw+pRRugHKhodMa9KmR+kQ==", "session"=>{"cnpj"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mCompany Load (0.9ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" IS NULL LIMIT 1
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."cnpj" = ? LIMIT 1[0m  [["cnpj", ""]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 11ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.187 at 2016-05-05 18:58:54 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 86ms (Views: 84.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 10.240.0.187 at 2016-05-05 19:00:55 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4kC8I+h+3fmom2dKIHhOvI8Dd1T1DhI2s53S7XiI8paXEpusf9OTe0UpgPwZFGlaV5IhqwqyLBBsJ+bbAXbqaA==", "session"=>{"login"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."login" = ? LIMIT 1[0m  [["login", ""]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 8ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.187 at 2016-05-05 19:00:55 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in_company" for 10.240.0.192 at 2016-05-05 19:01:02 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsCompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2UqQUvIs3rhmN+ZTTtPfjDyLLsu7R7yI4gkdTuphlc2sGLfdZYGQOouFAeV3v/hq5Bp4NET7gq49syl4k5+NMw==", "session"=>{"cnpj"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mCompany Load (0.4ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" IS NULL LIMIT 1
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."cnpj" = ? LIMIT 1[0m  [["cnpj", ""]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 8ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.208 at 2016-05-05 19:01:03 +0000
+Cannot render console from 10.240.0.208! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 10.240.0.189 at 2016-05-05 19:01:07 +0000
+Cannot render console from 10.240.0.189! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SKRYcUTEDz02X3T89oP0WwlOSyxxSPJH+GT2qx0Bb7M99n/+02lBv9vtk0rP79O90d8d0470zGEn3sKdZP93TQ==", "session"=>{"login"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."login" = ? LIMIT 1[0m  [["login", ""]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.204 at 2016-05-05 19:01:08 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 89ms (Views: 87.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 10.240.0.204 at 2016-05-05 19:01:13 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vscLVz/xLjZCXSfNyylRBfaByAJJjAfkI0gsS97buIzLlSzYqFxgtK/vwHvyRXbjLhCe/bYwOcL88hh9pyWgcg==", "session"=>{"login"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."login" = ? LIMIT 1[0m  [["login", ""]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.204 at 2016-05-05 19:01:13 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.0ms)

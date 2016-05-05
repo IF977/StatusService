@@ -9,7 +9,8 @@ class SessionsCompaniesController < ApplicationController
 			sign_in_company(@company)
 			redirect_to current_company
 		else
-			render action: :new
+			flash[:error] = "Incorrect login or password"
+			redirect_to sign_in_login_path
 		end
 	end
 	

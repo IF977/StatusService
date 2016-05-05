@@ -2,7 +2,7 @@ Given(/^I am on the home page$/) do
     '/'
 end
 
-When (/^I press login button$/) do
+When(/^I press login button$/) do
     visit (root_path)
     click_button('btn_login')
 end
