@@ -36,7 +36,11 @@ gem 'bcrypt'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+<<<<<<< HEAD
   gem 'rspec-rails', '~> 3.0'
+=======
+  gem 'rspec-rails','~> 3.0'
+>>>>>>> ed7c3467f274bbf79fd3d7fc847c3c760c5f72d1
 end
 
 group :test do
@@ -58,4 +62,3 @@ group :production do
   gem 'rails_12factor', '0.0.2'
   gem 'puma',           '2.11.1'
 end
-
