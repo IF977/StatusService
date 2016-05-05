@@ -9,7 +9,8 @@ class SessionsController < ApplicationController
 			sign_in(@user)
 			redirect_to current_user
 		else
-			render action: :new
+			flash[:error] = "Incorrect login or password"
+			redirect_to sign_in_login_path
 		end
 	end
 	
