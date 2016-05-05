@@ -25,3 +25,166 @@ Migrating to AddIndexToCompanysCnpj (20160427114540)
   [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160427114540"]]
   [1m[36m (11.5ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 10.240.0.203 at 2016-05-04 14:34:41 +0000
+Cannot render console from 10.240.0.203! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 1653ms (Views: 1635.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.self-20437477f3bdfa15ef3ee1179942895c828f312d5a58d98194bea60e09f86265.css?body=1" for 10.240.0.186 at 2016-05-04 14:34:44 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-toggle.self-9198e01fbfe277e0e47260a4fdec8b56e3cc4b8b6a06d189db6b11f294430565.css?body=1" for 10.240.0.186 at 2016-05-04 14:34:44 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-toggle.min.self-5b94fd5758b15460be4f85b34be7d22cce8b905e7f820328b86c05dfa3201e0b.css?body=1" for 10.240.0.206 at 2016-05-04 14:34:44 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-598365399e6ae8f5a456a189663bac8ef9b8996ace38626328403f280fd63400.css?body=1" for 10.240.0.204 at 2016-05-04 14:34:44 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.min.self-66fe84b79c6d5db31355296a8c9627d232721fe3ac3c31f3554ccc7e999279b6.css?body=1" for 10.240.0.165 at 2016-05-04 14:34:44 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap2-toggle.self-379593ba7c9ed5bf39668b549fd01780066ca0f60c277423a64ac3101a71b081.css?body=1" for 10.240.0.207 at 2016-05-04 14:34:44 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap2-toggle.min.self-0d2fcc17cd28b4e6fb1056da4f31907ece653c0f88c789ddb012195aa1ce0f0c.css?body=1" for 10.240.0.203 at 2016-05-04 14:34:44 +0000
+Cannot render console from 10.240.0.203! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/companys.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.179 at 2016-05-04 14:34:44 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/login.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.165 at 2016-05-04 14:34:44 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.203 at 2016-05-04 14:34:44 +0000
+Cannot render console from 10.240.0.203! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions_companies.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.187 at 2016-05-04 14:34:44 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.187 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-ba6a565fd58c9717587440027426736f95986de402f9e46241a0f2ceea3a60c9.css?body=1" for 10.240.0.165 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-f0416c3e59e14ef7696ceb1d82cbadb0c6d61f42bca049412051d8e381399529.css?body=1" for 10.240.0.75 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 10.240.0.187 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-theme.min.self-6f2f4ae8073eeed25f7f4c1fe221c20b00fe8aea594a38fa55e240d6d6a2e51d.css?body=1" for 10.240.0.206 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 10.240.0.204 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 10.240.0.75 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-toggle.self-ad54ae5b610d0fa54785829ea48f28bae0156e6da3c36e42c65ba2455b7d4058.js?body=1" for 10.240.0.187 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-toggle.min.self-7e7ab5c49a69778bc06c8a768ae78d37ceecb1516b6feeca186087afbc091d67.js?body=1" for 10.240.0.206 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for 10.240.0.167 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap.min.self-d475868eedd65d9ab19f96e8574a2c8ce91ba7d64b8bbfa47cd55591a956ed67.js?body=1" for 10.240.0.157 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap2-toggle.self-42dc2096bf3a930c8ab4972d7bddc3ce69cdebe560edc1cdb2f3160a28b1e5a3.js?body=1" for 10.240.0.187 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap2-toggle.min.self-39b7aad85523bbaca97894fa559f16ea4dabe4570c72af649aa396e6a22edee6.js?body=1" for 10.240.0.157 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/companys.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.75 at 2016-05-04 14:34:45 +0000
+Cannot render console from 10.240.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/login.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.75 at 2016-05-04 14:34:46 +0000
+Cannot render console from 10.240.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/npm.self-f66d504f2cd5bddaaade9c854b02828e5e46d225517ab9feebe1af2615566b1e.js?body=1" for 10.240.0.75 at 2016-05-04 14:34:46 +0000
+Cannot render console from 10.240.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.165 at 2016-05-04 14:34:46 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions_companies.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.75 at 2016-05-04 14:34:46 +0000
+Cannot render console from 10.240.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.186 at 2016-05-04 14:34:46 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.110 at 2016-05-04 14:34:46 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-141e255a50a74582fe4c8465da15eee28d284b4a45acd318010321d5194d833d.js?body=1" for 10.240.0.75 at 2016-05-04 14:34:46 +0000
+Cannot render console from 10.240.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/sign_in_login" for 10.240.0.167 at 2016-05-04 14:34:49 +0000
+Cannot render console from 10.240.0.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (55.1ms)
+Completed 200 OK in 160ms (Views: 158.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 10.240.0.167 at 2016-05-04 14:34:52 +0000
+Cannot render console from 10.240.0.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (21.6ms)
+  Rendered users/new.html.erb within layouts/application (108.2ms)
+Completed 200 OK in 188ms (Views: 175.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/companies/new" for 10.240.0.203 at 2016-05-04 14:35:00 +0000
+Cannot render console from 10.240.0.203! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#new as HTML
+  Rendered companies/_form.html.erb (6.9ms)
+  Rendered companies/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 186ms (Views: 172.8ms | ActiveRecord: 0.5ms)
