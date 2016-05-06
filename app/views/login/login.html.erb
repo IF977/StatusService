@@ -17,14 +17,19 @@
 		<div class="well well-sm" id="div_user">
 			<%= form_for :session, url: sign_in_path do |f| %>
 			<div class="field">
-				<%= f.label :login %><br /> 
-				<%= f.text_field :login %> 
+				<br>
+				<div class="input-group margin-bottom-sm">
+                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+				    <%= f.text_field :login, :placeholder => 'LOGIN' ,class: 'form-control' %> 
+				</div>
 			</div> 
-	
 			<div class="field"> 
-				<%= f.label :password %><br /> 
-				<%= f.password_field :password, autocomplete: "off" %> 
-			</div> 
+			  <br>
+		      <div class="input-group margin-bottom-sm">
+                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+				  <%= f.password_field :password, autocomplete: "off",:placeholder => 'PASSWORD', class: 'form-control' %> 
+			  </div>
+			</div>
 			<div class="actions">
 				<br>
 				<%= f.submit "Log in", class: 'btn' %> 
@@ -38,15 +43,20 @@
 	<div id="div_aba2" style="display:none;">
 		<div class="well well-sm" id="div_company">
 			<%= form_for :session, url: sign_in_company_path do |f| %>
-				<div class="field">
-					<%= f.label :cnpj %><br /> 
-					<%= f.text_field :cnpj %> 
-				</div> 
-	
-				<div class="field"> 
-					<%= f.label :password %><br /> 
-					<%= f.password_field :password, autocomplete: "off" %> 
-				</div> 
+			<div class="field">
+			  <br> 
+			  <div class="input-group margin-bottom-sm">
+                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+			      <%= f.text_field :cnpj, :placeholder => 'CNPJ' ,class: 'form-control' %> 
+			   </div>
+			</div> 
+			<div class="field"> 
+		      <br>
+		      <div class="input-group margin-bottom-sm">
+                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+				  <%= f.password_field :password, autocomplete: "off",:placeholder => 'PASSWORD', class: 'form-control' %> 
+			  </div>
+			</div> 
 				<div class="actions">
 					<br> 
 					<%= f.submit "Log in", class: 'btn' %> 

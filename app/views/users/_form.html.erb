@@ -1,4 +1,5 @@
-<%= form_for @user do |u| %>
+<div class="container">
+<%= form_for @user, class: 'form-horizontal' do |u| %>
 	<% if @user.errors.any? %>
 	<div id="error_explanation">
 		<div class="alert-error">
@@ -14,26 +15,28 @@
 
 	<div class="field">
 		<%= u.label :nome %>
-		<%= u.text_field :nome %>
+		<%= u.text_field :nome, :placeholder => "Nome", class: 'form-control' %>
 	</div>
 	<div class="field">
 		<%= u.label :email %>
-		<%= u.email_field :email %>
+		<%= u.email_field :email,  :placeholder => "Email", class: 'form-control' %>
 	</div>
 	<div class="field">
 		<%= u.label :login %>
-		<%= u.text_field :login %>
+		<%= u.text_field :login, :placeholder => "Login", class: 'form-control' %>
 	</div>
 	<div class="field">
 		<%= u.label :password %>
-		<%= u.password_field :password %>
+		<%= u.password_field :password, :placeholder => "Password", class: 'form-control' %>
 	</div>
 	<div class="field">
 		<%= u.label :password_confirmation %>
-		<%= u.password_field :password_confirmation %>
+		<%= u.password_field :password_confirmation,  :placeholder => "Password Confirmation", class: 'form-control' %>
 	</div>
 	<div class="actions">
-		<%= u.submit "Cadastrar" %>
+		<br>
+		<%= u.submit "Cadastrar", class: 'btn' %>
 	</div>
 <% end %>
+</div>
 
