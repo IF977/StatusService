@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StatusService</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <%= link_to '<font size=6; color=white>StatusService</font>'.html_safe, root_path %>
+  <div class='btn_top'><%= yield :btn %></div>
+</nav>
+
+
+
+
+<%= yield %>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <center><font color=white>CopyLeft - WildCats</font></center>
+  </div>
+</div>
+</body>
+</html>

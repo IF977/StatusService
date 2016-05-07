@@ -1,0 +1,30 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//.box_login{ #position:absolute;
+//            left:50%;
+ //           top:50%;
+ //           width:40%; 
+  //          height:40%;
+//            
+ //           
+  //          }
+#box_login{position:absolute;
+    left:40%;
+    right:30%;
+    }
+
+#btn_user{
+     background: #4169E1;
+    color: #6495ED;
+   }
+#btn_user:hover{ background: #6495ED;
+    color: #4169E1;
+}
+#btn_company{
+     background: #4169E1;
+    color: #6495ED;
+    }
+#btn_company:hover{ background: #6495ED;
+    color: #4169E1;
+}
