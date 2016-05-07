@@ -35,7 +35,7 @@
 				<%= f.submit "Log in", class: 'btn' %> 
 			</div> 
 	
-			<p>New user? <%= link_to "Sign up now!", new_user_path %></p> 
+			<p>New user? <a href='/users/new' id='link_user'>Sign up now!</a></p> 
 			<% end %>
 		</div>
 	</div>
@@ -62,7 +62,7 @@
 					<%= f.submit "Log in", class: 'btn' %> 
 				</div> 
 	
-				<p>New company? <%= link_to "Sign up now!", new_company_path %></p> 
+				<p>New company?<a href='/companies/new' id='link_company'>Sign up now!</a></p> 
 			<% end %>
 		</div>
 	</div>
