@@ -3,14 +3,20 @@
 		<nav> 
 			<ul> 
 				<% if logged_in? %> 
-					<li><%= link_to "Users", users_path %></li> 
-					<li> 
-						<ul> 
-							<li><%= link_to "Profile", current_user %></li> 
-							<li><%= link_to "Settings", edit_user_path(current_user) %></li> 
-							<li> <%= link_to "Log out", sign_out_path, method: "delete" %> </li> 
-						</ul> 
-					</li>
+					<% content_for :btn do %>
+						<div class="dropdown">
+  							<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><%= @user.login %>
+  									<span class="caret"></span></button>
+								<ul class="dropdown-menu">
+		  							<li><%= link_to "Users", users_path %></li>
+		  							<li role="separator" class="divider"></li>
+									<li><%= link_to "Profile", current_user %></li> 
+									<li><%= link_to "Settings", edit_user_path(current_user) %></li> 
+									<li> <%= link_to "Log out", sign_out_path, method: "delete" %> </li> 
+								</ul> 
+							
+						</div>
+					<% end %>
 				<% end %> 
 			</ul> 
 		</nav> 

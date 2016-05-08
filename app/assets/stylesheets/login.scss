@@ -1,3 +1,31 @@
 // Place all the styles related to the login controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#box_login{position:absolute;
+    width:350px;
+    height:600px;
+    left:35%;
+    }
+#div_user{
+}
+#btn_login_user{background: #4169E1;
+    color: white;
+    width: 295px;
+    }
+#btn_login_user:hover{
+    
+    background: #6495ED;
+    color: white;
+    
+    }
+    
+#btn_login_company{background: #4169E1;
+    color: white;
+    width: 295px;
+    }
+#btn_login_company:hover{
+    
+    background: #6495ED;
+    color: white;
+    
+    }

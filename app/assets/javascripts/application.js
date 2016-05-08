@@ -15,10 +15,7 @@
 //= require turbolinks
 //= require_tree .
 
-<<<<<<< HEAD:status-service/app/assets/javascripts/application.js
-=======
 
->>>>>>> ce6ca977a247523fc2a0cc88d75546edc304a4e4:app/assets/javascripts/application.js
 function btn_(obj) {
 
      document.getElementById('div_aba1').style.display="none";
@@ -37,7 +34,4 @@ function btn_(obj) {
       break
    }
 }
-<<<<<<< HEAD:status-service/app/assets/javascripts/application.js
-=======
 
->>>>>>> ce6ca977a247523fc2a0cc88d75546edc304a4e4:app/assets/javascripts/application.js
