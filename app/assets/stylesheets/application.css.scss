@@ -18,6 +18,8 @@
  
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 .panel{position: absolute;
         bottom: 0%;
@@ -28,3 +30,5 @@
         right: 3%;
         top: 1%;
 }
+
+
