@@ -4,7 +4,7 @@ end
 
 When(/^I press sign up user now link$/) do
     visit (sign_in_login_path)
-    page.find('#div_user').click_link('link_user')
+    page.find('#div_aba1').click_link('link_user')
     #click_link('link_user')
 end
 

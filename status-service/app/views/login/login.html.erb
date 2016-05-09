@@ -1,0 +1,55 @@
+<!-- Script de ocultar mostrar -->
+
+
+<div class="well well-lg" id="box_login">
+	<div class="btn-group" role="group" aria-label="...">
+		<button type="button" class="btn btn-default" onclick="btn_(this);" id="btn_user" disabled><font color=white>User</font></button>
+		<button type="button" class="btn btn-default"onclick="btn_(this);" id="btn_company"><font color=white>Company</font></button>
+		<!-- <%= link_to '<button type="button" class="btn btn-default" onclick="mostrar_abas(this);" id="btn_user2">User</button>'.html_safe, sign_in_path %> -->
+		<!--<%= link_to '<button type="button" class="btn btn-default" id="btn_company">Company</button>'.html_safe, sign_in_company_path%> -->
+	</div>
+<!-- Aba de usuario -->	
+	<div id="div_aba1" style="display;">
+		<div class="well well-lg" id="div_user">
+			<%= form_for :session, url: sign_in_path do |f| %>
+			<div class="field">
+				<%= f.label :login %><br /> 
+				<%= f.text_field :login %> 
+			</div> 
+	
+			<div class="field"> 
+				<%= f.label :password %><br /> 
+				<%= f.password_field :password, autocomplete: "off" %> 
+			</div> 
+			<div class="actions"> 
+				<%= f.submit "Log in" %> 
+			</div> 
+	
+			<p>New user? <%= link_to "Sign up now!", new_user_path %></p> 
+			<% end %>
+		</div>
+	</div>
+<!-- Aba de compania -->
+	<div id="div_aba2" style="display:none;">
+		<div class="well well-lg" id="div_company">
+			<%= form_for :session, url: sign_in_company_path do |f| %>
+				<div class="field">
+					<%= f.label :cnpj %><br /> 
+					<%= f.text_field :cnpj %> 
+				</div> 
+	
+				<div class="field"> 
+					<%= f.label :password %><br /> 
+					<%= f.password_field :password, autocomplete: "off" %> 
+				</div> 
+				<div class="actions"> 
+					<%= f.submit "Log in" %> 
+				</div> 
+	
+				<p>New company? <%= link_to "Sign up now!", new_company_path %></p> 
+			<% end %>
+		</div>
+	</div>
+
+
+</div>
