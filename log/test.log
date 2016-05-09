@@ -1342,3 +1342,68 @@ Processing by UsersController#new as HTML
   Rendered users/new.html.erb within layouts/application (8.0ms)
 Completed 200 OK in 21ms (Views: 13.2ms | ActiveRecord: 0.3ms)
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-05-09 11:49:37 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 6637ms (Views: 6624.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/sign_in_login" for 127.0.0.1 at 2016-05-09 11:49:44 +0000
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+Started GET "/companies/new" for 127.0.0.1 at 2016-05-09 11:49:44 +0000
+Processing by CompaniesController#new as HTML
+  Rendered companies/_form.html.erb (21.0ms)
+  Rendered companies/new.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 49ms (Views: 36.2ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/sign_in_login" for 127.0.0.1 at 2016-05-09 11:49:44 +0000
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/" for 127.0.0.1 at 2016-05-09 11:53:23 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 304ms (Views: 289.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/sign_in_login" for 127.0.0.1 at 2016-05-09 11:53:24 +0000
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 28ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+Started GET "/companies/new" for 127.0.0.1 at 2016-05-09 11:53:24 +0000
+Processing by CompaniesController#new as HTML
+  Rendered companies/_form.html.erb (41.8ms)
+  Rendered companies/new.html.erb within layouts/application (48.3ms)
+Completed 200 OK in 69ms (Views: 59.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/sign_in_login" for 127.0.0.1 at 2016-05-09 11:53:24 +0000
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+Started GET "/users/new" for 127.0.0.1 at 2016-05-09 11:53:24 +0000
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (8.6ms)
+  Rendered users/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 30ms (Views: 19.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (1.7ms)[0m  [1mrollback transaction[0m
