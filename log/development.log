@@ -25572,3 +25572,1916 @@ Processing by LoginController#login as HTML
 Completed 200 OK in 92ms (Views: 90.9ms | ActiveRecord: 0.0ms)
 >>>>>>> 120a688d1942de2cca0d45bc6249bd5fab2c56c2
 >>>>>>> 83c16c03a4aeb8c9e2ccff227934458a67771834
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateExames (20160511020247)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "exames" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar, "company_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_exames_on_company_id" ON "exames" ("company_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160511020247"]]
+  [1m[36m (24.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_exames_on_company_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_exames_on_company_id' AND type='index'
+[0m
+
+
+Started GET "/" for 10.240.0.166 at 2016-05-11 02:12:03 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 3302ms (Views: 3287.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/exames.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.206 at 2016-05-11 02:12:07 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/exames.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.166 at 2016-05-11 02:12:07 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/sign_in_login" for 10.240.0.166 at 2016-05-11 02:12:10 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 202ms (Views: 195.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in_company" for 10.240.0.166 at 2016-05-11 02:12:18 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsCompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CMSMVW793v9QpY8Gp+75H+XemhgGE8cefTqImNzWPhgzmTYjQQDhNcdTjIR+rgIuW8LKGje3xRFVOw5bjnDsIQ==", "session"=>{"cnpj"=>"11111111111111", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mCompany Load (0.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" IS NULL LIMIT 1
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."cnpj" = ? LIMIT 1[0m  [["cnpj", "11111111111111"]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 84ms (ActiveRecord: 41.3ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.206 at 2016-05-11 02:12:18 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 198ms (Views: 197.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in_company" for 10.240.0.207 at 2016-05-11 02:12:29 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsCompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GbX/5K//o4WEeclxzwBducXKaFWtZ3hJ3pmoIlgQX4ki6EWSgAKcTxOPyvMWQKaIe9Y4V5zDekb2mC7hCraNsA==", "session"=>{"cnpj"=>"11111111111111", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" IS NULL LIMIT 1
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."cnpj" = ? LIMIT 1[0m  [["cnpj", "11111111111111"]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/sign_in_login
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.166 at 2016-05-11 02:12:30 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 150ms (Views: 149.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies/new" for 10.240.0.192 at 2016-05-11 02:12:35 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#new as HTML
+  Rendered companies/_form.html.erb (27.2ms)
+  Rendered companies/new.html.erb within layouts/application (47.2ms)
+Completed 200 OK in 198ms (Views: 189.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/companies" for 10.240.0.189 at 2016-05-11 02:12:51 +0000
+Cannot render console from 10.240.0.189! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tn3X7c9zpbXQwnpilub7nG98b1UIoMoJre2b/CgPcXR1IG2b4I6af0c0eeBPpgCt0WA/VzkEyAaF7B0/eqmjTQ==", "company"=>{"cnpj"=>"11111111111111", "nome"=>"Empresa X", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Cadastrar"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mCompany Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "companies" WHERE "companies"."nome" = 'Empresa X' LIMIT 1[0m
+  [1m[35mCompany Exists (0.1ms)[0m  SELECT  1 AS one FROM "companies" WHERE "companies"."cnpj" = '11111111111111' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "companies" ("cnpj", "nome", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cnpj", "11111111111111"], ["nome", "empresa x"], ["password_digest", "$2a$10$9F0OAiOWsA7qmvrjVH41pOpw6ffqTLkJ6vump/3R4d1Z8twUlO77m"], ["created_at", "2016-05-11 02:12:51.451445"], ["updated_at", "2016-05-11 02:12:51.451445"]]
+  [1m[35m (13.3ms)[0m  commit transaction
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/companies/1
+Completed 302 Found in 129ms (ActiveRecord: 14.2ms)
+
+
+Started GET "/companies/1" for 10.240.0.166 at 2016-05-11 02:12:51 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.4ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" IS NULL LIMIT 1[0m
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/
+Filter chain halted as :authorize_company rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 10.240.0.166 at 2016-05-11 02:12:52 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 157ms (Views: 155.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.179 at 2016-05-11 02:12:55 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 159ms (Views: 158.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in_company" for 10.240.0.165 at 2016-05-11 02:13:04 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsCompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3MqcATWbzOu7kJuCAMuZGcWGoxNiF4lrKw4CpLYxIifnlyZ3GmbzISxmmADZi2Ioe5rzEVOzi2QDD4Rn5JfwHg==", "session"=>{"cnpj"=>"11111111111111", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[35mCompany Load (0.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" IS NULL LIMIT 1
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."cnpj" = ? LIMIT 1[0m  [["cnpj", "11111111111111"]]
+  [1m[35mCompany Load (0.4ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://status-service-pedrojsn96.c9users.io:8080/companies/1
+Completed 302 Found in 82ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/companies/1" for 10.240.0.206 at 2016-05-11 02:13:05 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered companies/_header.html.erb (1.0ms)
+  Rendered companies/show.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"exames", :id=>"1"} missing required keys: [:company_id]):
+     5:    	<ul>
+     6:    		<li><%= link_to "Edit", edit_company_path(current_company) %></li>
+     7:    		<li><%= link_to "Delete", @company, method: :delete %></li>
+     8:    		<li><%= link_to "Avaliações", company_exame_path %></li>
+     9:    	</ul>
+    10: <% end %>
+  app/views/companies/show.html.erb:8:in `_app_views_companies_show_html_erb__71318379092125988_70259418882120'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.9ms)
+
+
+Started GET "/companies/1" for 10.240.0.166 at 2016-05-11 02:13:22 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered companies/_header.html.erb (0.9ms)
+  Rendered companies/show.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>#<Company id: 1, cnpj: "11111111111111", nome: "empresa x", password_digest: "$2a$10$9F0OAiOWsA7qmvrjVH41pOpw6ffqTLkJ6vump/3R4d1...", created_at: "2016-05-11 02:12:51", updated_at: "2016-05-11 02:12:51">, :controller=>"exames", :id=>nil} missing required keys: [:id]):
+     5:    	<ul>
+     6:    		<li><%= link_to "Edit", edit_company_path(current_company) %></li>
+     7:    		<li><%= link_to "Delete", @company, method: :delete %></li>
+     8:    		<li><%= link_to "Avaliações", company_exame_path(current_company) %></li>
+     9:    	</ul>
+    10: <% end %>
+  app/views/companies/show.html.erb:8:in `_app_views_companies_show_html_erb__71318379092125988_70259434685240'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (107.1ms)
+
+
+Started GET "/companies/1" for 10.240.0.192 at 2016-05-11 02:13:54 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCompany Load (0.3ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered companies/_header.html.erb (0.8ms)
+  Rendered companies/show.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>#<Company id: 1, cnpj: "11111111111111", nome: "empresa x", password_digest: "$2a$10$9F0OAiOWsA7qmvrjVH41pOpw6ffqTLkJ6vump/3R4d1...", created_at: "2016-05-11 02:12:51", updated_at: "2016-05-11 02:12:51">, :controller=>"exames", :id=>nil} missing required keys: [:id]):
+     5:    	<ul>
+     6:    		<li><%= link_to "Edit", edit_company_path(current_company) %></li>
+     7:    		<li><%= link_to "Delete", @company, method: :delete %></li>
+     8:    		<li><%= link_to "Avaliações", company_exame_path(current_company) %></li>
+     9:    	</ul>
+    10: <% end %>
+  app/views/companies/show.html.erb:8:in `_app_views_companies_show_html_erb__71318379092125988_70259434685240'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (118.0ms)
+
+
+Started GET "/companies/1/asa" for 10.240.0.192 at 2016-05-11 02:13:57 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/companies/1/asa"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (134.1ms)
+
+
+Started GET "/companies/1/" for 10.240.0.166 at 2016-05-11 02:14:18 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered companies/_header.html.erb (0.7ms)
+  Rendered companies/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 150ms (Views: 147.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/exames.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 10.240.0.204 at 2016-05-11 02:14:19 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/exames.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 10.240.0.166 at 2016-05-11 02:14:19 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/companies/1/exames" for 10.240.0.166 at 2016-05-11 02:14:22 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.3ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 137ms (Views: 124.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/companies/1/" for 10.240.0.192 at 2016-05-11 02:14:48 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered companies/_header.html.erb (0.7ms)
+  Rendered companies/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 110ms (Views: 107.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.165 at 2016-05-11 02:15:22 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.3ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 125ms (Views: 123.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/1//das" for 10.240.0.192 at 2016-05-11 02:17:52 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/companies/1/das"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.4ms)
+
+
+Started GET "/companies/1" for 10.240.0.110 at 2016-05-11 02:21:40 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (3.6ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered companies/_header.html.erb (0.9ms)
+  Rendered companies/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 160ms (Views: 153.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/companies/1/" for 10.240.0.197 at 2016-05-11 02:21:41 +0000
+Cannot render console from 10.240.0.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered companies/_header.html.erb (0.8ms)
+  Rendered companies/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 156ms (Views: 152.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.75 at 2016-05-11 02:21:43 +0000
+Cannot render console from 10.240.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.3ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 169ms (Views: 167.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.179 at 2016-05-11 02:21:50 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 146ms (Views: 139.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.189 at 2016-05-11 02:22:31 +0000
+Cannot render console from 10.240.0.189! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (53.5ms)
+  Rendered exames/new.html.erb within layouts/application (56.5ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `exames_path' for #<#<Class:0x007fcd1a51f880>:0x007fcd18c92420>):
+    1: <div class="container">
+    2: <%= form_for @exame do |u| %>
+    3: 	<% if @exame.errors.any? %>
+    4: 	<div id="error_explanation">
+    5: 		<div class="alert-error">
+  app/views/exames/_form.html.erb:2:in `_app_views_exames__form_html_erb___899213393136922827_70259430407000'
+  app/views/exames/new.html.erb:2:in `_app_views_exames_new_html_erb___1355324412070338543_70259430426620'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.4ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.197 at 2016-05-11 02:22:35 +0000
+Cannot render console from 10.240.0.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (31.2ms)
+  Rendered exames/new.html.erb within layouts/application (33.5ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `exames_path' for #<#<Class:0x007fcd1a51f880>:0x007fcd1705ba18>):
+    1: <div class="container">
+    2: <%= form_for @exame do |u| %>
+    3: 	<% if @exame.errors.any? %>
+    4: 	<div id="error_explanation">
+    5: 		<div class="alert-error">
+  app/views/exames/_form.html.erb:2:in `_app_views_exames__form_html_erb___899213393136922827_70259415622900'
+  app/views/exames/new.html.erb:2:in `_app_views_exames_new_html_erb___1355324412070338543_70259415634720'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (24.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.2ms)
+
+
+Started GET "/companies/1/exames/new/dasd" for 10.240.0.166 at 2016-05-11 02:24:48 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/companies/1/exames/new/dasd"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (146.6ms)
+
+
+Started GET "/companies/1/exames/" for 10.240.0.206 at 2016-05-11 02:25:29 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.3ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 146ms (Views: 145.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.166 at 2016-05-11 02:25:31 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (4.7ms)
+  Rendered exames/new.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <div class="container">
+    2: <%= form_for @company_exame do |u| %>
+    3: 	<% if @exame.errors.any? %>
+    4: 	<div id="error_explanation">
+    5: 		<div class="alert-error">
+  app/views/exames/_form.html.erb:2:in `_app_views_exames__form_html_erb___899213393136922827_70259419674300'
+  app/views/exames/new.html.erb:2:in `_app_views_exames_new_html_erb___1355324412070338543_70259430426620'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.3ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.166 at 2016-05-11 02:25:34 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (2.8ms)
+  Rendered exames/new.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <div class="container">
+    2: <%= form_for @company_exame do |u| %>
+    3: 	<% if @exame.errors.any? %>
+    4: 	<div id="error_explanation">
+    5: 		<div class="alert-error">
+  app/views/exames/_form.html.erb:2:in `_app_views_exames__form_html_erb___899213393136922827_70259419674300'
+  app/views/exames/new.html.erb:2:in `_app_views_exames_new_html_erb___1355324412070338543_70259430426620'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (30.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.5ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.179 at 2016-05-11 02:25:37 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (3.5ms)
+  Rendered exames/new.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <div class="container">
+    2: <%= form_for @company_exame do |u| %>
+    3: 	<% if @exame.errors.any? %>
+    4: 	<div id="error_explanation">
+    5: 		<div class="alert-error">
+  app/views/exames/_form.html.erb:2:in `_app_views_exames__form_html_erb___899213393136922827_70259419674300'
+  app/views/exames/new.html.erb:2:in `_app_views_exames_new_html_erb___1355324412070338543_70259430426620'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (107.0ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.110 at 2016-05-11 02:25:40 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (3.5ms)
+  Rendered exames/new.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <div class="container">
+    2: <%= form_for @company_exame do |u| %>
+    3: 	<% if @exame.errors.any? %>
+    4: 	<div id="error_explanation">
+    5: 		<div class="alert-error">
+  app/views/exames/_form.html.erb:2:in `_app_views_exames__form_html_erb___899213393136922827_70259423283240'
+  app/views/exames/new.html.erb:2:in `_app_views_exames_new_html_erb___1355324412070338543_70259415634720'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.1ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.200 at 2016-05-11 02:26:13 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (101.5ms)
+  Rendered exames/new.html.erb within layouts/application (103.4ms)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `exames_path' for #<#<Class:0x007fcd1a51f880>:0x007fcd16f3f5f8>):
+    1: <div class="container">
+    2: <%= form_for @exame do |u| %>
+    3: 	<% if @exame.errors.any? %>
+    4: 	<div id="error_explanation">
+    5: 		<div class="alert-error">
+  app/views/exames/_form.html.erb:2:in `_app_views_exames__form_html_erb___899213393136922827_70259415004200'
+  app/views/exames/new.html.erb:2:in `_app_views_exames_new_html_erb___1355324412070338543_70259415634720'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (122.3ms)
+
+
+Started GET "/companies/1" for 10.240.0.186 at 2016-05-11 02:33:09 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCompany Load (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered companies/_header.html.erb (1.5ms)
+  Rendered companies/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 115ms (Views: 112.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/sign_out_company" for 10.240.0.189 at 2016-05-11 02:33:23 +0000
+Cannot render console from 10.240.0.189! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsCompaniesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FcYqAMz8J+BT3Vcvks1V5tRWPKn6N9fUS0EhdwXrc0gum5B24wEYKsQrVK1Lja7Xakpsq8uT1dtjQKe0V02hcQ=="}
+Redirected to https://status-service-pedrojsn96.c9users.io:8080/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.204 at 2016-05-11 02:33:23 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 99ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/kkk" for 10.240.0.208 at 2016-05-11 02:34:36 +0000
+Cannot render console from 10.240.0.208! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/kkk"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (117.2ms)
+
+
+Started GET "/" for 10.240.0.208 at 2016-05-11 02:34:54 +0000
+Cannot render console from 10.240.0.208! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 97ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in_login" for 10.240.0.75 at 2016-05-11 02:34:55 +0000
+Cannot render console from 10.240.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by LoginController#login as HTML
+  Rendered login/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 108ms (Views: 107.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in_company" for 10.240.0.208 at 2016-05-11 02:35:02 +0000
+Cannot render console from 10.240.0.208! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsCompaniesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"99bRR5SI5kib9QOevnGemwUj85tpQj7/KPxEsbIThDnMi2sxu3XZggwDABxnMWWquz+jmVjmPPAA/cJy4LVWAA==", "session"=>{"cnpj"=>"11111111111111", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" IS NULL LIMIT 1[0m
+  [1m[35mCompany Load (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."cnpj" = ? LIMIT 1  [["cnpj", "11111111111111"]]
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to https://status-service-pedrojsn96.c9users.io:8080/companies/1
+Completed 302 Found in 138ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/companies/1" for 10.240.0.200 at 2016-05-11 02:35:03 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered companies/_header.html.erb (0.6ms)
+  Rendered companies/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 128ms (Views: 125.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.208 at 2016-05-11 02:35:05 +0000
+Cannot render console from 10.240.0.208! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.3ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 172ms (Views: 170.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.179 at 2016-05-11 02:35:08 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (62.0ms)
+  Rendered exames/new.html.erb within layouts/application (64.7ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `exames_path' for #<#<Class:0x007fcd1a51f880>:0x007fcd16c5b418>):
+    1: <div class="container">
+    2: <%= form_for @exame do |u| %>
+    3: 	<% if @exame.errors.any? %>
+    4: 	<div id="error_explanation">
+    5: 		<div class="alert-error">
+  app/views/exames/_form.html.erb:2:in `_app_views_exames__form_html_erb___899213393136922827_70259411227340'
+  app/views/exames/new.html.erb:2:in `_app_views_exames_new_html_erb___1355324412070338543_70259430426620'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.2ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.187 at 2016-05-11 02:35:15 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (27.2ms)
+  Rendered exames/new.html.erb within layouts/application (28.5ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `exames_path' for #<#<Class:0x007fcd1a51f880>:0x007fcd180f9a50>):
+    1: <div class="container">
+    2: <%= form_for @exame do |u| %>
+    3: 	<% if @exame.errors.any? %>
+    4: 	<div id="error_explanation">
+    5: 		<div class="alert-error">
+  app/views/exames/_form.html.erb:2:in `_app_views_exames__form_html_erb___899213393136922827_70259424315180'
+  app/views/exames/new.html.erb:2:in `_app_views_exames_new_html_erb___1355324412070338543_70259415634720'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.8ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.167 at 2016-05-11 02:35:59 +0000
+Cannot render console from 10.240.0.167! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (2.7ms)
+  Rendered exames/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 152ms (Views: 143.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.204 at 2016-05-11 02:36:22 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (2.5ms)
+  Rendered exames/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 135ms (Views: 134.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/1/exames/company_exames_path" for 10.240.0.110 at 2016-05-11 02:36:57 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [POST] "/companies/1/exames/company_exames_path"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (117.6ms)
+
+
+Started POST "/companies/1/exames/company_exames_path" for 10.240.0.165 at 2016-05-11 02:40:08 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [POST] "/companies/1/exames/company_exames_path"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (107.3ms)
+
+
+Started POST "/companies/1/exames/company_exames_path" for 10.240.0.186 at 2016-05-11 02:41:10 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [POST] "/companies/1/exames/company_exames_path"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (125.2ms)
+
+
+Started POST "/companies/1/exames/company_exames_path" for 10.240.0.165 at 2016-05-11 02:41:45 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [POST] "/companies/1/exames/company_exames_path"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (132.1ms)
+
+
+Started GET "/companies/1/" for 10.240.0.186 at 2016-05-11 02:47:50 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCompany Load (0.1ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered companies/_header.html.erb (1.0ms)
+  Rendered companies/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 206ms (Views: 192.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.204 at 2016-05-11 02:47:52 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.2ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 123ms (Views: 118.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.186 at 2016-05-11 02:47:55 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (2.3ms)
+  Rendered exames/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 200ms (Views: 196.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/companies/1/exames/company_exames" for 10.240.0.208 at 2016-05-11 02:48:09 +0000
+Cannot render console from 10.240.0.208! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [POST] "/companies/1/exames/company_exames"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (129.5ms)
+
+
+Started GET "/companies/1/exames/" for 10.240.0.179 at 2016-05-11 02:51:22 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.4ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 139ms (Views: 137.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.157 at 2016-05-11 02:51:24 +0000
+Cannot render console from 10.240.0.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (2.6ms)
+  Rendered exames/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 154ms (Views: 153.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.207 at 2016-05-11 02:54:01 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (2.9ms)
+  Rendered exames/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 128ms (Views: 127.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/1/exames" for 10.240.0.166 at 2016-05-11 02:54:08 +0000
+Cannot render console from 10.240.0.166! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RiFr1s9TwfHI37lkWELiiQazToRfJWXcdRaGI8MeShV9fNGg4K7+O18puuaBAhm4uK8ehm6BZ9NdFwDgkbiYLA==", "exame"=>{"nome"=>"Criando Avaliação"}, "commit"=>"Criar", "company_id"=>"1"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "exames" ("nome", "created_at", "updated_at") VALUES (?, ?, ?)  [["nome", "Criando Avaliação"], ["created_at", "2016-05-11 02:54:08.040903"], ["updated_at", "2016-05-11 02:54:08.040903"]]
+  [1m[36m (11.8ms)[0m  [1mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 12.4ms)
+
+NoMethodError (undefined method `exame_url' for #<ExamesController:0x007fcd175e0948>
+Did you mean?  exame_params):
+  app/controllers/exames_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (104.2ms)
+
+
+Started POST "/companies/1/exames" for 10.240.0.179 at 2016-05-11 02:54:57 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RiFr1s9TwfHI37lkWELiiQazToRfJWXcdRaGI8MeShV9fNGg4K7+O18puuaBAhm4uK8ehm6BZ9NdFwDgkbiYLA==", "exame"=>{"nome"=>"Criando Avaliação"}, "commit"=>"Criar", "company_id"=>"1"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "exames" ("nome", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nome", "Criando Avaliação"], ["created_at", "2016-05-11 02:54:57.591727"], ["updated_at", "2016-05-11 02:54:57.591727"]]
+  [1m[35m (10.3ms)[0m  commit transaction
+Redirected to https://status-service-pedrojsn96.c9users.io:8080/companies/1/exames
+Completed 302 Found in 21ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.189 at 2016-05-11 02:54:57 +0000
+Cannot render console from 10.240.0.189! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.3ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>"1", :controller=>"exames"} missing required keys: [:id]):
+    10: 		<% @exames.each do |exame| %> 
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td><%= link_to "Show", company_exame_path %></td> 
+    14: 		</tr> 
+    15: 		<%end%>
+    16: 		<tr>
+  app/views/exames/index.html.erb:13:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259417737760'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259417737760'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.0ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.200 at 2016-05-11 02:55:47 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.3ms)[0m  SELECT "exames".* FROM "exames"
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered exames/index.html.erb within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>#<Company id: 1, cnpj: "11111111111111", nome: "empresa x", password_digest: "$2a$10$9F0OAiOWsA7qmvrjVH41pOpw6ffqTLkJ6vump/3R4d1...", created_at: "2016-05-11 02:12:51", updated_at: "2016-05-11 02:12:51">, :controller=>"exames", :id=>nil} missing required keys: [:id]):
+    10: 		<% @exames.each do |exame| %> 
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td><%= link_to "Show", company_exame_path(current_company) %></td> 
+    14: 		</tr> 
+    15: 		<%end%>
+    16: 		<tr>
+  app/views/exames/index.html.erb:13:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259437299960'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259437299960'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.4ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.207 at 2016-05-11 02:56:16 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.2ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>"1", :controller=>"exames"} missing required keys: [:id]):
+    10: 		<% @exames.each do |exame| %> 
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td><%= link_to "Show", company_exame_path %></td> 
+    14: 		</tr> 
+    15: 		<%end%>
+    16: 		<tr>
+  app/views/exames/index.html.erb:13:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259452254060'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259452254060'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (118.9ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.206 at 2016-05-11 02:56:53 +0000
+Cannot render console from 10.240.0.206! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.3ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>nil, :controller=>"exames", :id=>nil} missing required keys: [:company_id, :id]):
+    10: 		<% @exames.each do |exame| %> 
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td><%= link_to "Show", company_exame_path(@company) %></td> 
+    14: 		</tr> 
+    15: 		<%end%>
+    16: 		<tr>
+  app/views/exames/index.html.erb:13:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259414053260'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259414053260'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.4ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.179 at 2016-05-11 02:57:45 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.4ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>nil, :controller=>"exames", :id=>nil} missing required keys: [:company_id, :id]):
+    10: 		<% @exames.each do |exame| %> 
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td><%= link_to "Show", company_exame_path(exame.company_id) %></td> 
+    14: 		</tr> 
+    15: 		<%end%>
+    16: 		<tr>
+  app/views/exames/index.html.erb:13:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259424798140'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259424798140'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (102.4ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.200 at 2016-05-11 02:59:26 +0000
+Cannot render console from 10.240.0.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.5ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>"1", :controller=>"exames"} missing required keys: [:id]):
+    10: 		<% @exames.each do |exame| %> 
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td><%= link_to "Show", company_exame_path %></td> 
+    14: 		</tr> 
+    15: 		<%end%>
+    16: 		<tr>
+  app/views/exames/index.html.erb:13:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259428852400'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259428852400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.9ms)
+
+
+Started GET "/companies/1/exames/das" for 10.240.0.207 at 2016-05-11 03:00:04 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#show as HTML
+  Parameters: {"company_id"=>"1", "id"=>"das"}
+  [1m[35mExame Load (0.3ms)[0m  SELECT  "exames".* FROM "exames" WHERE "exames"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Exame with 'id'=das):
+  app/controllers/exames_controller.rb:20:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.9ms)
+
+
+Started GET "/companies/1/examesdas" for 10.240.0.207 at 2016-05-11 03:00:15 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/companies/1/examesdas"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (106.8ms)
+
+
+Started GET "/companies/1/exames/" for 10.240.0.186 at 2016-05-11 03:00:51 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.5ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>#<Exame id: 1, nome: "Criando Avaliação", company_id: nil, created_at: "2016-05-11 02:54:08", updated_at: "2016-05-11 02:54:08">, :controller=>"exames", :id=>nil} missing required keys: [:id]):
+    10: 		<% @exames.each do |exame| %> 
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td><%= link_to "Show", company_exame_path(exame) %></td> 
+    14: 		</tr> 
+    15: 		<%end%>
+    16: 		<tr>
+  app/views/exames/index.html.erb:13:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259408354780'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259408354780'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.4ms)
+
+
+Started GET "/companies/1/exames/" for 10.240.0.189 at 2016-05-11 03:01:27 +0000
+Cannot render console from 10.240.0.189! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.3ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>"1", :controller=>"exames"} missing required keys: [:id]):
+    10: 		<% @exames.each do |exame| %> 
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td><%= link_to "Show", company_exame_path %></td> 
+    14: 		</tr> 
+    15: 		<%end%>
+    16: 		<tr>
+  app/views/exames/index.html.erb:13:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259420754900'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259420754900'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.5ms)
+
+
+Started GET "/companies/1/exames/" for 10.240.0.197 at 2016-05-11 03:03:03 +0000
+Cannot render console from 10.240.0.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.4ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 149ms (Views: 147.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/companies/1/" for 10.240.0.189 at 2016-05-11 03:03:28 +0000
+Cannot render console from 10.240.0.189! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCompany Load (0.1ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered companies/_header.html.erb (1.3ms)
+  Rendered companies/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 134ms (Views: 130.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.203 at 2016-05-11 03:03:35 +0000
+Cannot render console from 10.240.0.203! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.3ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 121ms (Views: 119.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/1/exames/1" for 10.240.0.192 at 2016-05-11 03:04:02 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#show as HTML
+  Parameters: {"company_id"=>"1", "id"=>"1"}
+  [1m[36mExame Load (0.2ms)[0m  [1mSELECT  "exames".* FROM "exames" WHERE "exames"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+ActionView::MissingTemplate (Missing template exames/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ubuntu/workspace/app/views"
+):
+  actionview (4.2.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.6) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (85.4ms)
+
+
+Started GET "/companies/1/exames/2" for 10.240.0.192 at 2016-05-11 03:04:10 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#show as HTML
+  Parameters: {"company_id"=>"1", "id"=>"2"}
+  [1m[35mExame Load (0.2ms)[0m  SELECT  "exames".* FROM "exames" WHERE "exames"."id" = ? LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+ActionView::MissingTemplate (Missing template exames/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ubuntu/workspace/app/views"
+):
+  actionview (4.2.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.6) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (97.5ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.203 at 2016-05-11 03:04:22 +0000
+Cannot render console from 10.240.0.203! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.4ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 179ms (Views: 177.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.157 at 2016-05-11 03:05:14 +0000
+Cannot render console from 10.240.0.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.3ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.192 at 2016-05-11 03:06:03 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.4ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 186ms (Views: 185.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/companies/1/exames/new" for 10.240.0.192 at 2016-05-11 03:06:10 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#new as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/_form.html.erb (2.8ms)
+  Rendered exames/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 120ms (Views: 119.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/companies/1/exames" for 10.240.0.192 at 2016-05-11 03:06:17 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"79lq6+KHmBTJQP4gokGr/wbGxOW5UOKcOkKgrKnyIvHUhNCdzXqn3l62/aJ7AVDOuNqU54j04JMSQyZv+1TwyA==", "exame"=>{"nome"=>"Test"}, "commit"=>"Criar", "company_id"=>"1"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "exames" ("nome", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["nome", "Test"], ["created_at", "2016-05-11 03:06:17.164454"], ["updated_at", "2016-05-11 03:06:17.164454"]]
+  [1m[35m (15.9ms)[0m  commit transaction
+Redirected to https://status-service-pedrojsn96.c9users.io:8080/companies/1/exames
+Completed 302 Found in 21ms (ActiveRecord: 16.4ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.192 at 2016-05-11 03:06:17 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.4ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 141ms (Views: 139.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.192 at 2016-05-11 03:06:47 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.2ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 146ms (Views: 145.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.197 at 2016-05-11 03:07:43 +0000
+Cannot render console from 10.240.0.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.3ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 109ms (Views: 108.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/1/examesdasda" for 10.240.0.197 at 2016-05-11 03:07:50 +0000
+Cannot render console from 10.240.0.197! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/companies/1/examesdasda"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (2.11.1) lib/puma/server.rb:507:in `handle_request'
+  puma (2.11.1) lib/puma/server.rb:375:in `process_client'
+  puma (2.11.1) lib/puma/server.rb:262:in `block in run'
+  puma (2.11.1) lib/puma/thread_pool.rb:104:in `block in spawn_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (24.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.0ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.186 at 2016-05-11 03:08:36 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.3ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 119ms (Views: 118.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.192 at 2016-05-11 03:09:55 +0000
+Cannot render console from 10.240.0.192! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.4ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>"1", :controller=>"exames"} missing required keys: [:id]):
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td>Vê perguntas</td>
+    14: 			<td><%= link_to "Excluir", company_exame_path, method: :delete %></td>
+    15: 		</tr> 
+    16: 		<%end%>
+    17: 		<tr>
+  app/views/exames/index.html.erb:14:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259418002380'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259418002380'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (25.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.1ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.165 at 2016-05-11 03:15:14 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.5ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>nil, :controller=>"exames", :id=>nil} missing required keys: [:company_id, :id]):
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td>Vê perguntas</td>
+    14: 			<td><%= link_to "Excluir", company_exame_path(@company), method: :delete %></td> 
+    15: 		</tr> 
+    16: 		<%end%>
+    17: 		<tr>
+  app/views/exames/index.html.erb:14:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259424480300'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259424480300'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.3ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.157 at 2016-05-11 03:15:53 +0000
+Cannot render console from 10.240.0.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.4ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>nil, :controller=>"exames", :id=>nil} missing required keys: [:company_id, :id]):
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td>Vê perguntas</td>
+    14: 			<td><%= link_to "Excluir", company_exame_path(@company, @exame), method: :delete %></td> 
+    15: 		</tr> 
+    16: 		<%end%>
+    17: 		<tr>
+  app/views/exames/index.html.erb:14:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259423279940'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259423279940'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.6ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.165 at 2016-05-11 03:17:14 +0000
+Cannot render console from 10.240.0.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.4ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>"1", :controller=>"exames"} missing required keys: [:id]):
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td>Vê perguntas</td>
+    14: 			<td><%= link_to "Show", company_exame_path %>
+    15: 			<!-- <td><%= link_to "Excluir", company_exame_path, method: :delete %></td> -->
+    16: 		</tr> 
+    17: 		<%end%>
+  app/views/exames/index.html.erb:14:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259411664480'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259411664480'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.3ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.157 at 2016-05-11 03:17:41 +0000
+Cannot render console from 10.240.0.157! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.3ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>"1", :controller=>"exames"} missing required keys: [:id]):
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td>Vê perguntas</td>
+    14: 			<!-- <td><%= link_to "Show", company_exame_path %> -->
+    15: 			<!-- <td><%= link_to "Excluir", company_exame_path, method: :delete %></td> -->
+    16: 		</tr> 
+    17: 		<%end%>
+  app/views/exames/index.html.erb:14:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259402512180'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259402512180'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (89.2ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.75 at 2016-05-11 03:18:18 +0000
+Cannot render console from 10.240.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  Rendered exames/index.html.erb within layouts/application (21.3ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/exames/index.html.erb:15: syntax error, unexpected '<'
+			<!-- <td>'.freeze;@output_buff...
+			 ^
+/home/ubuntu/workspace/app/views/exames/index.html.erb:15: syntax error, unexpected '<'
+			<!-- <td>'.freeze;@output_buffer.ap...
+			      ^
+/home/ubuntu/workspace/app/views/exames/index.html.erb:16: unknown regexp options - tr
+/home/ubuntu/workspace/app/views/exames/index.html.erb:19: syntax error, unexpected '<'
+			<td>'.freeze;@output_buffer.ap...
+			 ^
+/home/ubuntu/workspace/app/views/exames/index.html.erb:20: unknown regexp options - tr
+/home/ubuntu/workspace/app/views/exames/index.html.erb:21: syntax error, unexpected '<'
+	</tbody> 
+	 ^
+/home/ubuntu/workspace/app/views/exames/index.html.erb:22: unknown regexp options - tabl
+/home/ubuntu/workspace/app/views/exames/index.html.erb:23: unterminated string meets end of file
+/home/ubuntu/workspace/app/views/exames/index.html.erb:23: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/exames/index.html.erb:15: syntax error, unexpected '<'
+  app/views/exames/index.html.erb:15: syntax error, unexpected '<'
+  app/views/exames/index.html.erb:16: unknown regexp options - tr
+  app/views/exames/index.html.erb:19: syntax error, unexpected '<'
+  app/views/exames/index.html.erb:20: unknown regexp options - tr
+  app/views/exames/index.html.erb:21: syntax error, unexpected '<'
+  app/views/exames/index.html.erb:22: unknown regexp options - tabl
+  app/views/exames/index.html.erb:23: unterminated string meets end of file
+  app/views/exames/index.html.erb:23: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (93.0ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.207 at 2016-05-11 03:18:47 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[35mExame Load (0.2ms)[0m  SELECT "exames".* FROM "exames"
+  Rendered exames/index.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :company_id=>"1", :controller=>"exames"} missing required keys: [:id]):
+    11: 		<tr> 
+    12: 			<td><%= exame.nome %></td>
+    13: 			<td>Vê perguntas</td>
+    14: 			<!-- <td><% link_to "Show", company_exame_path %> -->
+    15: 			<!-- <td><% link_to "Excluir", company_exame_path, method: :delete %></td> -->
+    16: 		</tr> 
+    17: 		<%end%>
+  app/views/exames/index.html.erb:14:in `block in _app_views_exames_index_html_erb__2952642199724171857_70259448766380'
+  app/views/exames/index.html.erb:10:in `_app_views_exames_index_html_erb__2952642199724171857_70259448766380'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.8ms)
+
+
+Started GET "/companies/1/exames" for 10.240.0.110 at 2016-05-11 03:19:13 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ExamesController#index as HTML
+  Parameters: {"company_id"=>"1"}
+  [1m[36mExame Load (0.3ms)[0m  [1mSELECT "exames".* FROM "exames"[0m
+  Rendered exames/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 111ms (Views: 109.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/companies/1/" for 10.240.0.189 at 2016-05-11 03:19:25 +0000
+Cannot render console from 10.240.0.189! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CompaniesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCompany Load (0.2ms)[0m  SELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT  "companies".* FROM "companies" WHERE "companies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered companies/_header.html.erb (0.6ms)
+  Rendered companies/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 123ms (Views: 120.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/sign_out_company" for 10.240.0.75 at 2016-05-11 03:19:35 +0000
+Cannot render console from 10.240.0.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsCompaniesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wXgEk48hSIwIrMRUIeX/3zzPpYFrBYnJDFgvqRez/Lr6Jb7loNx3Rp9ax9b4pQTugtP1g1qhi8YkWalqRRUugw=="}
+Redirected to https://status-service-pedrojsn96.c9users.io:8080/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.189 at 2016-05-11 03:19:35 +0000
+Cannot render console from 10.240.0.189! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 115ms (Views: 113.7ms | ActiveRecord: 0.0ms)

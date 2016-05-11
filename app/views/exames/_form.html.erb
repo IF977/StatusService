@@ -1,0 +1,25 @@
+<div class="container">
+<%= form_for @exame, url: company_exames_path do |u| %>
+	<% if @exame.errors.any? %>
+	<div id="error_explanation">
+		<div class="alert-error">
+			O formulário contém <%= pluralize(@exame.errors.count, "erro") %>
+		</div>
+		<ul>
+			<% @exame.errors.full_messages.each do |msg| %>
+			<li><%= msg %></li>
+			<% end %>
+		</ul>
+	</div>
+	<% end %>
+
+	<div class="field">
+		<%= u.label :nome %>
+		<%= u.text_field :nome,  :placeholder => "NOME", class: 'form-control' %>
+	</div>
+	<div class="actions">
+		<br>
+		<%= u.submit "Criar", class: 'btn' %>
+	</div>
+<% end %>
+</div>

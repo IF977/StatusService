@@ -1,0 +1,22 @@
+<h1>Avaliações</h1> 
+<table> 
+	<thead> 
+		<tr> 
+			<th>Nome</th>
+			<th></th> 
+		</tr> 
+	</thead> 
+	<tbody> 
+		<% @exames.each do |exame| %> 
+		<tr> 
+			<td><%= exame.nome %></td>
+			<td>Vê perguntas</td>
+			<!-- <td>link_to "Show", company_exame_path %> -->
+			<!-- <td> link_to "Excluir", company_exame_path, method: :delete %></td> -->
+		</tr> 
+		<%end%>
+		<tr>
+			<td><%= link_to "Nova Avaliação", new_company_exame_path%></td>
+		</tr>
+	</tbody> 
+</table>
