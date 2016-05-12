@@ -10,9 +10,10 @@
 		<% @exames.each do |exame| %> 
 		<tr> 
 			<td><%= exame.nome %></td>
-			<td>Vê perguntas</td>
-			<td><%= link_to "Show", company_exame_path %>
-			<!-- <td> link_to "Excluir", company_exame_path, method: :delete %></td> -->
+			<!-- Faço a interpolação das strings embaixo para poder acessar a rota -->
+			<td><%= link_to "Show", '/companies/:company_id/exames/' << exame.id.to_s %>
+			<td><%= link_to "Excluir", '/companies/:company_id/exames/' << exame.id.to_s, method: :delete %></td>
+			<!-- <td> link_to "Excluir", company_exame_path(exame.id), method: :delete %></td> -->
 		</tr> 
 		<%end%>
 		<tr>
