@@ -1,10 +1,17 @@
-<%= render 'header' %>
-<h3>Perfil de <%= @user.nome %> </h3>
-Email:<%= @user.email %>
-Login:<%= @user.login %> 
-<% if current_user == @user %>
-	<ul>
-   		<li><%= link_to "Edit", edit_user_path(current_user) %></li>
-   		<li><%= link_to "Delete", @user, method: :delete %></li>
-   	</ul>
-<% end %>
+<div class="col-sm-2">
+    <% if current_company == @company %>
+        <div class="btn-group-vertical" role="group" aria-label="..." id='menu_user'>
+            <center>
+                <%= link_to '<button type="button" class="btn btn-primary" id="btn_Home">Home</button>'.html_safe,root_path %>
+                <%= link_to '<button type="button" class="btn btn-primary" id="btn_Edit">Edit</button>'.html_safe, edit_user_path(current_user) %>
+                <%= link_to '<button type="button" class="btn btn-primary" id="btn_Delete">Delete</button>'.html_safe, @user, method: :delete %>
+            </center>
+        </div>
+    <% end %>
+</div>
+<div class="col-sm-10">
+    <%= render 'header' %>
+    <!--<h3>Perfil de <%= @user.nome %> </h3>-->
+    Email:<%= @user.email %><br>
+    Login:<%= @user.login %> 
+</div>
