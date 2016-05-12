@@ -1,0 +1,2 @@
+module ExamesHelper
+end
