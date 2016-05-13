@@ -1,19 +1,13 @@
-
-<div class="col-sm-2">
-    
-    <% if current_company == @company %>
-        <div class="btn-group-vertical" role="group" aria-label="..." id='menu_company'>
-            <center>
-                <%= link_to '<button type="button" class="btn btn-primary" id="btn_Home">Home</button>'.html_safe,root_path %>
-                <%= link_to '<button type="button" class="btn btn-primary" id="btn_Avalia">Avaliações</button>'.html_safe,root_path %>
-                <%= link_to '<button type="button" class="btn btn-primary" id="btn_Edit">Edit</button>'.html_safe, edit_company_path(current_company) %>
-                <%= link_to '<button type="button" class="btn btn-primary" id="btn_Delete">Delete</button>'.html_safe, @company, method: :delete %>
-            </center>
-        </div>
-    <% end %>
+ <%= render 'header' %>
+<div id="page-wrapper">
+	<div class="container-fluid">
+        <h3>Perfil de <%= @company.nome %> </h3>
+        CNPJ:<%= @company.cnpj %>
+        <% if current_company == @company %>
+           	<ul>
+           		<li><%= link_to "Edit", edit_company_path(current_company) %></li>
+           		<li><%= link_to "Delete", @company, method: :delete %></li>
+           	</ul>
+        <% end %>
+    </div>
 </div>
-
-    <%= render 'header' %>
-    <!--<h3>Perfil de <%= @company.nome %> </h3>-->
-    CNPJ:<%= @company.cnpj %>
-

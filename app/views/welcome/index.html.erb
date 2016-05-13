@@ -1,4 +1,5 @@
 <% content_for :btn do %>
+<<<<<<< HEAD
     <% if logged_in?%>
         <%= link_to '<button type="button" class="btn btn-default" title="My Profile" id="btn_login"><i class="fa fa-user" aria-hidden="true"></i></button>'.html_safe, current_user %>
         <%= link_to '<button type="button" class="btn btn-default" id="btn_login">Sign Out</button>'.html_safe, sign_out_path, method: "delete" %>
@@ -10,5 +11,13 @@
     <%end%>
 <%end%>
 
+=======
+    <%= link_to '<button type="button" class="btn btn-default" id="btn_login">Login</button>'.html_safe, sign_in_login_path %>
+<% end %>
+<br>
+<br>
+<br>
+<br>
+>>>>>>> 15208e05f126a3de7bcc55544eefd975d988e796
     <h1>Status Service</h1>
     <h2>Este é o site para avaliar e ter seus serviços avaliados</h2>

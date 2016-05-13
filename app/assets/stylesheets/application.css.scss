@@ -21,14 +21,41 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+.navbar-toggle{
+        float: left;
+}
 .panel{position: absolute;
         bottom: 0%;
         width:100%;
         background: #696969;}
+
 .navbar{background:#4169E1; bottom:0%;}
+        
+.panel-default{
+        margin-bottom: 0px;
+}
+//.navbar{background:#4169E1;}
+
 .btn_top{position: fixed;
-        right: 3%;
+        right: 10%;
         top: 1%;
 }
+.nav > li > a:hover, 
+.nav > li > a:focus{
+        background-color: transparent;
+}
+.nav .open > a, 
+.nav .open > a:hover,
+.nav .open > a:focus{
+        background-color: transparent;
+}
 
+.navbar-collapse{
+        background-color: #333333;
+        margin-top: 50px;
+}
+.navbar-nav > li > a{
+        color: #fff;
+}
 

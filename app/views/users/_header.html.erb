@@ -1,27 +1,32 @@
-<header> 
-	<div> 
-		<nav> 
-			<ul> 
-				<% if logged_in? %> 
-					<% content_for :btn do %>
-						<div class="dropdown">
-							<div class="btn-group">
-	  							<button type="button" class="btn btn-default"><%= current_user.login %></button>
-	  							<button type="button" class="btn btn-default dropdown-toggle" id="menu1" data-toggle="dropdown">
-	    							<span class="caret"></span>
-	  							</button>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-										<li role="presentation"><%= link_to "Profile", current_user %></li> 
-										<li role="presentation"><%= link_to "Settings", edit_user_path(current_user) %></li> 
-										<li role="presentation"> <%= link_to "Log out", sign_out_path, method: "delete" %> </li> 
-									</ul> 
-								
-							</div>
-						</div>
-						<%end%>
-				
-				<% end %> 
-			</ul> 
-		</nav> 
-	</div> 
-</header>
+<% if logged_in? %> 
+	<% content_for :btn do %>
+		<ul class="nav navbar-right top-nav">
+			<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>  <%= @user.login %> <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+			    	<li role="presentation"><%= link_to "Profile", current_user %></li> 
+			        <li role="presentation"><%= link_to "Settings", edit_user_path(current_user) %></li> 
+			        <li role="presentation"> <%= link_to "Log out", sign_out_path, method: "delete" %> </li>
+			     </ul>
+			</li>
+		</ul>
+	<%end%>
+	
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+    	<ul class="nav navbar-nav side-nav">
+			<li>
+			   <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+			</li>
+			<li>
+			   <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+			</li>
+			<li>
+				<a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+			 </li>
+			                  
+			</ul>
+    </div>
+	
+	
+<% end %> 
+
