@@ -1,7 +1,11 @@
 <%= render 'header' %>
-<h1> Company Settings</h1>
-<%= render 'form' %>
-<ul>
-	<li><%= link_to "Edit", edit_company_path(current_company) %></li>
-	<li><%= link_to "Delete", @company, method: :delete %></li>
-</ul>
+<div id="page-wrapper">
+	<div class="container-fluid">
+		<h1> Company Settings</h1>
+		<%= render 'form' %>
+		<ul>
+			<li><%= link_to "Edit", edit_company_path(current_company) %></li>
+			<li><%= link_to "Delete", @company, method: :delete %></li>
+		</ul>
+	</div>
+</div>
