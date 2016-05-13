@@ -1,6 +1,8 @@
-<% content_for :btn do %>
-    <%= link_to '<button type="button" class="btn btn-default" id="btn_login">Login</button>'.html_safe, sign_in_login_path %>
-<% end %>
+<% unless logged_in_company? %>
+	<% content_for :btn do %>
+	    <%= link_to '<button type="button" class="btn btn-default" id="btn_login">Login</button>'.html_safe, sign_in_login_path %>
+	<% end %>
+<%end%>
 
 <div class="container">
 <%= form_for @company do |u| %>
