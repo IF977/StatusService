@@ -2,7 +2,7 @@
 	<% content_for :btn do %>
 		<ul class="nav navbar-right top-nav">
 			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>  <%= @company.nome %> <b class="caret"></b></a>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>  <%= current_company.nome %> <b class="caret"></b></a>
 			    <ul class="dropdown-menu">
 			    	<li role="presentation"><%= link_to "Profile", current_company %></li> 
 			        <li role="presentation"><%= link_to "Settings", edit_company_path(current_company) %></li> 

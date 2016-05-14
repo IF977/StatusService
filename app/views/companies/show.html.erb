@@ -1,10 +1,18 @@
- <%= render 'header' %>
-<h3>Perfil de <%= @company.nome %> </h3>
-CNPJ:<%= @company.cnpj %>
-<% if current_company == @company %>
-   	<ul>
-   		<li><%= link_to "Edit", edit_company_path(current_company) %></li>
-   		<li><%= link_to "Delete", @company, method: :delete %></li>
-   		<li><%= link_to "Avaliações", company_exames_path(current_company) %></li>
-   	</ul>
-<% end %>
+<%= render 'header' %>
+<div id="page-wrapper">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+    <h1 class="page-header">Perfil de <%= @company.nome %> </h1>
+    CNPJ:<%= @company.cnpj %>
+    <% if current_company == @company %>
+     <ul>
+      <li><%= link_to "Edit", edit_company_path(current_company) %></li>
+      <li><%= link_to "Delete", @company, method: :delete %></li>
+      <li><%= link_to "Avaliações", company_exames_path(current_company) %></li>
+     </ul>
+    <% end %>
+    </div>
+   </div>
+  </div>
+</div>
