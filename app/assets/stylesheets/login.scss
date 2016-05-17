@@ -10,39 +10,43 @@
     }
 #div_user{
 }
-#btn_login_user{background: #4169E1;
-    color: white;
+#btn_login_user{background-color: #222;
+    color: #9d9d9d;
+    border-color: #9d9d9d;
     width: 295px;
     }
 #btn_login_user:hover{
     
-    background: #6495ED;
+    border-color: #fff;
     color: white;
     
     }
     
-#btn_login_company{background: #4169E1;
-    color: white;
+#btn_login_company{background-color: #222;
+    color: #9d9d9d;
+    border-color: #9d9d9d;
     width: 295px;
     }
 #btn_login_company:hover{
     
-    background: #6495ED;
+    border-color: #fff;
     color: white;
     
     }
 
 #btn_user{
-    background: #4169E1;
-    color: #6495ED;
+    background: #222;
+    color: #9d9d9d;
+    border-color: #9d9d9d;
    }
-#btn_user:hover{ background: #6495ED;
-    color: #4169E1;
+#btn_user:hover{ border-color: #fff;
+    color: #fff;
 }
 #btn_company{
-     background: #4169E1;
-    color: #6495ED;
+    background: #222;
+    color: #9d9d9d;
+    border-color: #9d9d9d;
     }
-#btn_company:hover{ background: #6495ED;
-    color: #4169E1;
+#btn_company:hover{ border-color: #fff;
+    color: #fff;
 }
