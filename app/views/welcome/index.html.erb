@@ -1,10 +1,10 @@
 <% content_for :btn do %>
     <% if logged_in?%>
-        <%= link_to '<button type="button" class="btn btn-default" title="My Profile" id="btn_login"><i class="fa fa-user" aria-hidden="true"></i></button>'.html_safe, current_user %>
+        <%= link_to '<button type="button" class="btn btn-default" title="My Profile" id="btn_prof"><i class="fa fa-user" aria-hidden="true"></i></button>'.html_safe, current_user %>
         <%= link_to '<button type="button" class="btn btn-default" id="btn_login">Sign Out</button>'.html_safe, sign_out_path, method: "delete" %>
     <%elsif logged_in_company? %>
-        <%= link_to '<button type="button" class="btn btn-default" title="My Profile" id="btn_login"><i class="fa fa-industry" aria-hidden="true"></i></button>'.html_safe, current_company %>
-        <%= link_to '<button type="button" class="btn btn-default" id="btn_login">Sign Out</button>'.html_safe, sign_out_company_path, method: "delete" %>   
+        <%= link_to '<button type="button" class="btn btn-default" title="My Profile" id="btn_prof"><i class="fa fa-industry" aria-hidden="true"></i></button>'.html_safe, current_company %>
+        <%= link_to '<button type="button" class="btn btn-default" id="btn_signout">Sign Out</button>'.html_safe, sign_out_company_path, method: "delete" %>   
     <%else%>
         <%= link_to '<button type="button" class="btn btn-default" id="btn_login">Login</button>'.html_safe, sign_in_login_path %>
     <%end%>
