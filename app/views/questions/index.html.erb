@@ -1,0 +1,30 @@
+<%= render 'header' %>
+<div id="page-wrapper">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">Perguntas</h1> 
+				<table> 
+					<thead> 
+						<tr> 
+							<th>Nome</th>
+							<th></th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<% @questions.each do |question| %>
+						<tr> 
+							<td><%= question.nome %></td>
+							<td><%= link_to "Show", '/companies/' << current_company.id.to_s << '/exames/' << question.exame_id.to_s << '/questions/' << question.id %>
+							<td><%= link_to "Excluir", '/companies/' << current_company.id.to_s << '/exames/' << question.exame_id.to_s << '/questions/' << question.id, method: :delete %></td>
+						</tr> 
+						<%end%>
+						<tr>
+							<td><%= link_to "Nova Pergunta", new_company_exame_question_path%></td>
+						</tr>
+					</tbody> 
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
