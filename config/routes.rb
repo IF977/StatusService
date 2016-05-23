@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
   resources :users
   resources :companies do
-    resources :exames
+    resources :exames do
+      resources :questions
+    end
   end
   root 'welcome#index' # primeira página
   get 'sign_in' => 'sessions#new' 
