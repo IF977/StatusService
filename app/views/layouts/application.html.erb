@@ -22,6 +22,7 @@
         <!--<img src="/assets/s-s"  id="icon" align="left"/>-->
         <%= link_to '<font id="title" class="navbar-brand">StatusService</font>'.html_safe, root_path %>
       </div>
+      <%= yield :btnscroll %>
       <div class='btn_top'><%= yield :btn %></div>
     </nav>
     
@@ -32,12 +33,7 @@
     
     
     
-  </div>  
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <center><font color=white>CopyLeft - WildCats</font></center>
-    </div>
-  </div>
+  </div> 
   
 </body>
 </html>
