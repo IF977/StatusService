@@ -1,6 +1,13 @@
 class ExamesController < ApplicationController
     def index
-        @exames = Exame.all
+        x = Exame.all
+        @exames = []
+        x.each do |exame|
+            if exame.company_id == current_company.id
+                @exames << exame
+            end
+        end
+        @exames
     end
     
     def new
@@ -8,7 +15,9 @@ class ExamesController < ApplicationController
     end
     
     def create
-        @exame = Exame.new(exame_params)
+        @company = Company.find(params[:company_id])
+        #@exame = Exame.new(exame_params)
+        @exame = @company.exames.create(exame_params)
         if @exame.save
             redirect_to company_exames_path
         else

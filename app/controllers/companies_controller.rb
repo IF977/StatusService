@@ -38,6 +38,17 @@ class CompaniesController < ApplicationController
   		sign_out_company
   		redirect_to root_path
   	end
+  	
+  	#def show_exames
+  	#	@exames = Exame.all
+  	#	x = []
+  	#	@exames.each do |exame|
+  	#		if exame.company_id == current_company.id
+  	#			x << exame	
+  	#		end
+  	#	end
+  	#	@exames = x
+  	#end
 
 	private
 	def user_params
