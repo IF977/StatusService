@@ -15,6 +15,10 @@ Rails.application.routes.draw do
   post 'sign_in_company' => 'sessions_companies#create' 
   delete 'sign_out_company' => 'sessions_companies#destroy'
   get 'sign_in_login' => 'login#login'
+  get 'empresas' => 'users#show_companies'
+  
+  #get 'avaliacoes' => 'companies#show_exames'
+  
   #post 'sign_in_login' => 'login#create'
   #delete 'sign_out_login' => 'login#destroy'
 

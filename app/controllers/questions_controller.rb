@@ -8,7 +8,9 @@ class QuestionsController < ApplicationController
     end
     
     def create
-        @question = Question.new(question_params)
+        @exame = Exame.find(params[:exame_id])
+        #@question = Question.new(question_params)
+        @question = @exame.questions.create(question_params)
         if @question.save
             redirect_to company_exame_questions_path
         else

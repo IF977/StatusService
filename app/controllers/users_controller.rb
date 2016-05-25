@@ -41,6 +41,10 @@
   		sign_out
   		redirect_to root_path
   	end
+  	
+  	def show_companies
+  		@companies = Company.all
+  	end
 
 	private
 	def user_params
