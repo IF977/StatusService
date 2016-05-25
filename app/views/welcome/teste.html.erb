@@ -10,14 +10,30 @@
     <%end%>
 <%end%>
 <% content_for :btnscroll do%>
-    <ul class="nav navbar-nav">
-        <li><a class="page-scroll" href="#about">Sobre</a></li>
-        <li><a class="page-scroll" href="#team">Time</a></li>
-    </ul>
+        <ul class="nav navbar-nav">
+            <li><a class="page-scroll" href="#about">Sobre</a></li>
+            <li><a class="page-scroll" href="#team">Time</a></li>
+        </ul>
 <%end%>
+<% if "#{request.base_url + request.original_fullpath}" == "#{request.base_url+root_path}"%>
+  <style>
+    #wrapper {
+      padding-left: 0;
+    }
+  </style>
+<% end %>
 <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
 
 <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+<!-- Section 0 -->
+<section id="#" class="team-#">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Section 1 -->
 <section id="about" class="about-section">
@@ -34,7 +50,7 @@
         </div>
     </div>
 </section>
-
+<!-- Section "Sobre WildCats -->
 <section id="team" class="team-section">
     <div class="container">
         <div class="row">
@@ -73,5 +89,4 @@
         </div>
     </div>
 </section>
-
 </body>

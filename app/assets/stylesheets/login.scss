@@ -1,12 +1,12 @@
 // Place all the styles related to the login controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-#box_login{position:absolute;
+.container{width: 100%;}
+#box_login{position:relative;
     width:350px;
     height:600px;
-    left:20%;
-    margin-top: 120px;
+    //left:30%;
+    margin-top: 5%;
     }
 #div_user{
 }
