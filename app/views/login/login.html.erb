@@ -1,3 +1,12 @@
+<% if "#{request.base_url + request.original_fullpath}" == "#{request.base_url+sign_in_login_path}"%>
+  <style>
+    #wrapper {
+      padding-left: 0;
+    }
+  </style>
+<% end %>
+<div class="container">
+<center>
 <div id="page-wrapper">
 	<div class="container-fluid">
 		<div class="row">
@@ -83,4 +92,5 @@
 		</div>
 	</div>
 </div>
-			
+</center>
+</div>
