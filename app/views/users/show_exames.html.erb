@@ -3,8 +3,8 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Empresas </h1> 
-				<table> 
+			    <h1 class="page-header">Avaliações</h1>
+                <table> 
 					<thead> 
 						<tr> 
 							<th>Nome</th> 
@@ -12,14 +12,14 @@
 						</tr> 
 					</thead> 
 					<tbody> 
-						<% @companies.each do |company| %> 
-						<tr> 
-							<td><%= link_to company.nome.upcase, user_avaliacoes_path(current_user.id,company.id) %></td>
+						<% @exames.each do |exame| %> 
+						<tr>
+							<td><%= exame.nome  %></td>  
 						</tr> 
 						<%end%> 
 					</tbody> 
-				</table>
-			</div>
-		</div>
+				</table> 			    
+			 </div>
+	    </div>
 	</div>
 </div>

@@ -1,13 +1,6 @@
 class ExamesController < ApplicationController
     def index
-        x = Exame.all
-        @exames = []
-        x.each do |exame|
-            if exame.company_id == current_company.id
-                @exames << exame
-            end
-        end
-        @exames
+        @exames = Exame.all
     end
     
     def new

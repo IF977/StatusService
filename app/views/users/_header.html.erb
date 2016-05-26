@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
     	<ul class="nav navbar-nav side-nav">
 			<li>
-			   <a href="/empresas"><i class="fa fa-fw fa-edit"></i>Empresas</a>
+			   <a href=<%= "/users/" << current_user.id.to_s << "/empresas"%>><i class="fa fa-fw fa-edit"></i>Empresas</a>
 			</li>
 			<li>
 			   <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>

@@ -45,6 +45,10 @@
   	def show_companies
   		@companies = Company.all
   	end
+  	def show_exames
+  		@company = Company.find(params[:id])
+  		@exames = @company.exames
+  	end
 
 	private
 	def user_params
