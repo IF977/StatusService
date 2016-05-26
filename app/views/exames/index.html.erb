@@ -12,9 +12,8 @@
 						</tr> 
 					</thead> 
 					<tbody> 
-						<% @exames.each do |exame| %> 
+						<% current_company.exames.each do |exame| %> 
 						<tr> 
-							<td><%= exame.id %></td>
 							<td><%= exame.nome %></td> <!-- subustituir company_id por current_company.id -->
 							<!-- Faço a interpolação das strings embaixo para poder acessar a rota -->
 							<td><%= link_to "Show", '/companies/' << current_company.id.to_s << '/exames/' << exame.id.to_s %>
