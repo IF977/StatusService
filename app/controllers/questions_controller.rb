@@ -1,5 +1,6 @@
 class QuestionsController < ApplicationController
     def index
+		@current_exame ||= Exame.find(params[:exame_id]) 
         @questions = Question.all
     end
     
