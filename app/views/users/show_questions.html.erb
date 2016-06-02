@@ -3,7 +3,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
-			    <h1 class="page-header">Avaliações</h1>
+			    <h1 class="page-header">Perguntas</h1>
                 <table> 
 					<thead> 
 						<tr> 
@@ -12,9 +12,9 @@
 						</tr> 
 					</thead> 
 					<tbody> 
-						<% @exames.each do |exame| %> 
+						<% @questions.each do |question| %> 
 						<tr>
-							<td><%= link_to exame.nome, user_perguntas_path(current_user.id, exame.id) %></td>
+							<td><%= question.nome  %></td>
 						</tr> 
 						<%end%> 
 					</tbody> 
