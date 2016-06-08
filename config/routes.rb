@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :users do
     get 'empresas' => 'users#show_companies'
     get 'avaliacoes/:id' => 'users#show_exames', as: 'avaliacoes'
+    get 'perguntas/:id' =>  'users#show_questions', as: 'perguntas'
   end
   resources :companies do
     resources :exames do
