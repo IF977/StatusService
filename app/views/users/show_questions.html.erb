@@ -15,6 +15,7 @@
 						<% @questions.each do |question| %> 
 						<tr>
 							<td><%= question.nome  %></td>
+							<td><%= link_to "Show", user_reviews_path(current_user.id, question.id)%></td>
 						</tr> 
 						<%end%> 
 					</tbody> 
