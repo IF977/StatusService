@@ -19,7 +19,7 @@
 							<td><%= link_to "Show", company_exame_questions_path(exame.company_id,exame.id) %></td>
 							<!--<td><= link_to "Show", '/companies/' << current_company.id.to_s << '/exames/' << exame.id.to_s %>-->
 							<!-- <td>< link_to "Excluir", '/companies/' << current_company.id.to_s << '/exames/' << exame.id.to_s, method: :delete %></td>-->
-							<td><%= link_to "Excluir", company_exame_questions_path(exame.company_id,exame.id), method: :delete %></td>
+							<td><%= link_to "Excluir", company_exame_path(exame.company_id,exame.id), method: :delete %></td>
 						</tr> 
 						<%end%>
 						<tr>
