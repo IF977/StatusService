@@ -52,8 +52,13 @@
   	end
   	
   	def show_questions
-  		@exame = Exame.find(params[:id])
+  		@exame = Exame.find(params[:exame_id])
   		@questions = @exame.questions
+  	end
+  	
+  	def review_question
+  		@question = Question.find(params[:question_id])
+  		@reviews = @question.reviews
   	end
 
 	private
