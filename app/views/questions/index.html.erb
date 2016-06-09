@@ -8,6 +8,7 @@
 					<thead> 
 						<tr> 
 							<th>Nome</th>
+							<th>Média</th>
 							<th></th> 
 						</tr> 
 					</thead> 
@@ -15,6 +16,7 @@
 						<% @current_exame.questions.each do |question| %>
 						<tr>
 							<td><%= question.nome %></td> <!-- Falta fazer o Show de Question -->
+							<td><%= media_question(question) %></td>
 							<td><%= link_to "Show", '/companies/' << current_company.id.to_s << '/exames/' << question.exame_id.to_s << '/questions/' << question.id %>
 							<td><%= link_to "Excluir", company_exame_question_path(current_company.id,question.exame_id,question.id), method: :delete %></td>
 							<!--<td><= link_to "Excluir", '/companies/' << current_company.id.to_s << '/exames/' << question.exame_id.to_s << '/questions/' << question.id, method: :delete %></td> -->
