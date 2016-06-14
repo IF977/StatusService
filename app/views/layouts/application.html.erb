@@ -12,12 +12,7 @@
   <div id="wrapper">
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     	<div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+    	<%= yield :btntoggle %>
         <!--<%=image_tag("s-s.png", alt: "Neko Icon", :class=>'icon') %>-->
         <!--<img src="/assets/s-s"  id="icon" align="left"/>-->
         <%= link_to '<font id="title" class="navbar-brand">StatusService</font>'.html_safe, root_path %>
@@ -26,7 +21,6 @@
       <div class='btn_top'><%= yield :btn %></div>
     </nav>
     <%= yield %>
-    
     
     
   </div> 
