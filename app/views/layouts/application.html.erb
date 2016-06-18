@@ -21,9 +21,24 @@
         <!--<%=image_tag("s-s.png", alt: "Neko Icon", :class=>'icon') %>-->
         <!--<img src="/assets/s-s"  id="icon" align="left"/>-->
         <%= link_to '<font id="title" class="navbar-brand">StatusService</font>'.html_safe, root_path %>
+        
       </div>
+      
         <%= yield :btnscroll %>
+        <% if logged_in?%>
+          <!--<form action="" class="navbar-form pull-right">
+            <input type="text" class="span2">
+            <button class="btn btn-inverse" id="pesquisaEmpresas"><span class="glyphicon glyphicon-search"></span></button>
+          </form>-->
+          <div class="input-group" id="searchdiv">
+            <input type="text" class="form-control"/>
+            <span class="input-group-addon">
+              <i class="fa fa-search"></i>
+            </span>
+          </div>
+       <% end %>
       <div class='btn_top'><%= yield :btn %></div>
+      
     </nav>
     <%= yield %>
     
