@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   resources :users do
     get 'empresas' => 'users#show_companies'
     get 'avaliacoes/:id' => 'users#show_exames', as: 'avaliacoes'
-    get 'perguntas/:id' =>  'users#show_questions', as: 'perguntas'
+    get 'perguntas/:exame_id' =>  'users#show_questions', as: 'perguntas'
+    get 'reviews/:question_id' => 'users#review_question', as: 'reviews'
+    post 'reviews/:question_id' => 'reviews#create'
+    
   end
   resources :companies do
     resources :exames do

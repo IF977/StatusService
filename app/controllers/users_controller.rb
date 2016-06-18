@@ -52,9 +52,22 @@
   	end
   	
   	def show_questions
-  		@exame = Exame.find(params[:id])
+  		@exame = Exame.find(params[:exame_id])
   		@questions = @exame.questions
   	end
+  	
+  	def review_question
+  		@question = Question.find(params[:question_id])
+  		@reviews = @question.reviews
+  	end
+  	
+  	 helper_method :media_question
+
+    def media_question(question)
+        @question = Question.joins(:reviews).where('reviews.question_id' => question.id)
+        media = @question.average(:nota)
+        format("%.3f",media)
+    end
 
 	private
 	def user_params
