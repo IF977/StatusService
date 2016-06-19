@@ -8,6 +8,7 @@
 					<thead> 
 						<tr> 
 							<th>Nome</th>
+							<th>Média</th>
 							<th></th> 
 						</tr> 
 					</thead> 
@@ -16,6 +17,7 @@
 						<tr> 
 							<td><%= exame.nome %></td> <!-- subustituir company_id por current_company.id -->
 							<!-- Faço a interpolação das strings embaixo para poder acessar a rota -->
+							<td><%= media_exame(exame) %></td>
 							<td><%= link_to "Show", company_exame_questions_path(exame.company_id,exame.id) %></td>
 							<!--<td><= link_to "Show", '/companies/' << current_company.id.to_s << '/exames/' << exame.id.to_s %>-->
 							<!-- <td>< link_to "Excluir", '/companies/' << current_company.id.to_s << '/exames/' << exame.id.to_s, method: :delete %></td>-->
