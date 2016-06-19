@@ -34,6 +34,29 @@ class ExamesController < ApplicationController
     def update
     end
     
+    helper_method :media_exame
+
+    def media_exame(exame)
+        resposta = []
+        aux = 0
+        questions = exame.questions
+        if questions.empty?
+            '-'
+        else
+            questions.each do |question|
+                question = Question.joins(:reviews).where('reviews.question_id' => question.id)
+                media = question.average(:nota)
+                if media != nil
+                    format("%.3f",media)
+                    resposta << media 
+                    aux += 1
+                end
+            end
+            media = resposta.inject(0){|sum,x| sum + x}/aux 
+            format("%.3f",media)
+        end
+    end
+    
     private
     def exame_params
         params.require(:exame).permit(:nome)
