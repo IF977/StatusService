@@ -34,7 +34,7 @@ class ExamesController < ApplicationController
     def update
     end
     
-    helper_method :media_exame
+    helper_method :media_exame,:status_exame
 
     def media_exame(exame)
         resposta = []
@@ -55,6 +55,16 @@ class ExamesController < ApplicationController
             media = resposta.inject(0){|sum,x| sum + x}/aux 
             format("%.3f",media)
         end
+    end
+    
+    def status_exame
+        status = {}
+        exames = current_company.exames
+        exames.each do |exame|
+            media = media_exame(exame)
+            status[exame.nome] = media
+        end
+        status
     end
     
     private

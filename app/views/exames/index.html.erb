@@ -29,6 +29,33 @@
 						</tr>
 					</tbody> 
 				</table>
+				
+				<table> 
+					<thead> 
+						<tr> 
+							<th>Melhor Avaliada</th>
+							<th></th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td><%= status_exame.max_by{|k,v| v}[0]%></td>
+						</tr>	
+					</tbody> 
+				</table>
+				<table> 
+					<thead> 
+						<tr> 
+							<th>Pior Avaliada</th>
+							<th></th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td><%= status_exame.min_by{|k,v| v}[0]%></td>
+						</tr>	
+					</tbody> 
+				</table>
 			</div>
 		</div>
 	</div>
