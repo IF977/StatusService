@@ -1,4 +1,7 @@
 <%= render 'header' %>
+<ol class="breadcrumb">
+  <li><a href=<%="/companies/" << current_company.id.to_s%>>Home</a></li>
+</ol>
 <div id="page-wrapper">
 	<div class="container-fluid">
 		<div class="row">
@@ -7,10 +10,6 @@
     CNPJ:<%= @company.cnpj %>
     <% if current_company == @company %>
      <ul>
-      <li><%= link_to "Edit", edit_company_path(current_company) %></li>
-      <li><%= link_to "Delete", @company, method: :delete %></li>
-      <li><%= link_to "Avaliações", company_exames_path(current_company) %></li>
-      <!--<li>< link_to "Avaliações", avaliacoes_path %></li>-->
      </ul>
     <% end %>
     </div>

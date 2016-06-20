@@ -1,4 +1,10 @@
 <%= render 'header' %>
+<ol class="breadcrumb">
+  <li><a href=<%="/users/" << current_user.id.to_s%>>Home</a></li>
+  <li><a href=<%="/users/" << current_user.id.to_s << "/empresas"%>>Empresas</a></li>
+  <li><a href="javascript:window.history.go(-1)">Avaliações</a></li>
+  <li class="active">Perguntas</li>
+</ol>
 <div id="page-wrapper">
 	<div class="container-fluid">
 		<div class="row">
