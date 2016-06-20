@@ -18,11 +18,11 @@
 			   <a href=<%= "/users/" << current_user.id.to_s << "/empresas"%>><i class="fa fa-fw fa-edit"></i>Empresas</a>
 			</li>
 			<li>
-			   <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-			</li>
-			<li li.active>
 				<a href="/search_comp"><i class="fa fa-search"></i> Pesquisar Empresas</a>
-			 </li>
+			</li>
+			<li>
+			   <a href=<%="/users/" << current_user.id.to_s << "/edit"%>><i class="fa fa-fw fa-desktop"></i>Settings</a>
+			</li>
 			                  
 			</ul>
     </div>

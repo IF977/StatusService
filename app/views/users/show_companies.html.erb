@@ -1,4 +1,8 @@
 <%= render 'header' %>
+<ol class="breadcrumb">
+  <li><a href=<%="/users/" << current_user.id.to_s%>>Home</a></li>
+  <li class="active">Empresas</li>
+</ol>
 <div id="page-wrapper">
 	<div class="container-fluid">
 		<div class="row">
