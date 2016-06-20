@@ -1,0 +1,21 @@
+<%= form_for @search do |f| %>
+    <% if @search.errors.any? %>
+        <div id="error_explanation">
+            <div class="alert-error">
+                O formulário contém <%= pluralize(@search.errors.count, "erro") %>.
+            </div>
+            <ul>
+                <% @search.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+              <div class="field">
+                          <%= f.label :searchcomp %>
+                          <%= f.text_field :searchcomp %>
+              </div>
+              <div class="actions">
+                          <%= f.submit "fa fa-search"%>
+              </div>
+  <% end %>
