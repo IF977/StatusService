@@ -52,19 +52,27 @@ class ExamesController < ApplicationController
                     aux += 1
                 end
             end
-            media = resposta.inject(0){|sum,x| sum + x}/aux 
-            format("%.3f",media)
+            if aux != 0
+                media = resposta.inject(0){|sum,x| sum + x}/aux 
+                format("%.3f",media)
+            else
+                '-'
+            end
         end
     end
     
     def status_exame
         status = {}
         exames = current_company.exames
-        exames.each do |exame|
-            media = media_exame(exame)
-            status[exame.nome] = media
+        if exames.empty?
+            '-'
+        else
+            exames.each do |exame|
+                media = media_exame(exame)
+                status[exame.nome] = media
+            end
+            status
         end
-        status
     end
     
     private

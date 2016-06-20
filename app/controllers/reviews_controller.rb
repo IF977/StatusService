@@ -5,7 +5,7 @@ class ReviewsController < ApplicationController
 
 
       	@review.save
-      	redirect_to user_reviews_path(current_user.id, @question.id)
+      	redirect_to user_perguntas_path(current_user.id, @question.exame_id)
   end
 
   private

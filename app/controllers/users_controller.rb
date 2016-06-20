@@ -89,8 +89,12 @@
                     aux += 1
                 end
             end
-            media = resposta.inject(0){|sum,x| sum + x}/aux 
-            format("%.3f",media)
+            if aux != 0
+                media = resposta.inject(0){|sum,x| sum + x}/aux 
+                format("%.3f",media)
+            else
+                '-'
+            end
         end
     end
 
