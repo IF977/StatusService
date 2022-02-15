@@ -36,7 +36,8 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.4.0)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     arel (6.0.3)
     autoprefixer-rails (9.7.1)
       execjs
@@ -119,6 +120,7 @@ GEM
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     pg (0.17.1)
+    public_suffix (4.0.6)
     puma (4.3.11)
       nio4r (~> 2.0)
     racc (1.5.2)
